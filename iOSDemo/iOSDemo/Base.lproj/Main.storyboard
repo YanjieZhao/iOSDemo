@@ -31,13 +31,24 @@
                                     <action selector="interactive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3rK-8Z-tz2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hpe-w6-YG1">
+                                <rect key="frame" x="20" y="68" width="102" height="30"/>
+                                <state key="normal" title="NetworkStatus"/>
+                                <connections>
+                                    <action selector="networkStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x9a-QF-f3l"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ggH-ck-ch1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="1IF-c5-hOO"/>
+                            <constraint firstItem="ggH-ck-ch1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="6MP-4z-BMA"/>
                             <constraint firstItem="ggH-ck-ch1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="8qr-uF-x5J"/>
                             <constraint firstItem="ggH-ck-ch1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="E0s-yP-hgH"/>
+                            <constraint firstItem="Hpe-w6-YG1" firstAttribute="top" secondItem="ggH-ck-ch1" secondAttribute="bottom" constant="10" id="Ih5-lJ-ysy"/>
                             <constraint firstItem="oQE-PV-us9" firstAttribute="leading" secondItem="ggH-ck-ch1" secondAttribute="trailing" constant="38" id="LE9-Db-no8"/>
                             <constraint firstItem="ggH-ck-ch1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="MYK-bH-opL"/>
+                            <constraint firstItem="Hpe-w6-YG1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="R2z-Ic-4Cz"/>
                             <constraint firstItem="oQE-PV-us9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ZoA-JB-bys"/>
                         </constraints>
                     </view>

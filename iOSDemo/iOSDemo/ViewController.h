@@ -11,5 +11,6 @@
 @interface ViewController : UIViewController
 - (IBAction)navigationPage:(id)sender;
 - (IBAction)interactive:(id)sender;
+- (IBAction)networkStatus:(id)sender;
 @end
 

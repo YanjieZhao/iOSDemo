@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "FirstViewController.h"
+#import "NetworkStatusViewController.h"
 
 @interface ViewController ()
 
@@ -37,5 +38,11 @@
     
     UINavigationController *naviController = [storyBoard instantiateViewControllerWithIdentifier:@"InteractiveTransitionNavigationController"];
     [self presentViewController:naviController animated:YES completion:nil];
+}
+
+- (IBAction)networkStatus:(id)sender {
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"NetworkStatusStoryboard" bundle:nil];
+    UIViewController *viewController = [storyBoard instantiateViewControllerWithIdentifier:@"NetworkStatusViewController"];
+    [self presentViewController:viewController animated:YES completion:nil];
 }
 @end
