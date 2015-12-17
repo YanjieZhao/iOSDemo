@@ -24,10 +24,19 @@
                                     <action selector="go:" destination="qn1-S8-TSx" eventType="touchUpInside" id="piR-Yt-Jo7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkk-ww-b7y">
+                                <rect key="frame" x="26" y="46" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="back:" destination="qn1-S8-TSx" eventType="touchUpInside" id="jfD-4b-kCT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="jWH-qW-35C" firstAttribute="centerY" secondItem="YHd-vO-xa0" secondAttribute="centerY" id="7oj-cH-OgQ"/>
+                            <constraint firstItem="Nkk-ww-b7y" firstAttribute="leading" secondItem="YHd-vO-xa0" secondAttribute="leading" constant="26" id="LFN-ml-HOV"/>
+                            <constraint firstItem="Nkk-ww-b7y" firstAttribute="top" secondItem="u9v-hY-nJq" secondAttribute="bottom" constant="26" id="QZQ-DN-yOk"/>
                             <constraint firstItem="jWH-qW-35C" firstAttribute="centerX" secondItem="YHd-vO-xa0" secondAttribute="centerX" id="ub1-UP-7eD"/>
                         </constraints>
                     </view>

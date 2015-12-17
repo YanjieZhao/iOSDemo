@@ -45,4 +45,7 @@
     second.transitioningDelegate = self.transitionDelegate;
     [self presentViewController:second animated:YES completion:nil];
 }
+- (IBAction)back:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

@@ -40,6 +40,13 @@
         herbView.center = CGPointMake(CGRectGetMidX(initialFrame), CGRectGetMidY(initialFrame));
     }
     
+    CABasicAnimation *round = [CABasicAnimation animationWithKeyPath:@"cornerRadius"];
+    float from = self.presenting ? 20.0f / xScaleFactor : 0.0f;
+    round.fromValue = [NSNumber numberWithFloat:from];
+    round.toValue = [NSNumber numberWithFloat:self.presenting ? 0.0f : 20.0 / xScaleFactor];
+    [herbView.layer addAnimation:round forKey:nil];
+    herbView.layer.cornerRadius = self.presenting ? 0.0 : 20.0/xScaleFactor;
+    
     [containerView addSubview:toView];
     [containerView bringSubviewToFront:herbView];
     

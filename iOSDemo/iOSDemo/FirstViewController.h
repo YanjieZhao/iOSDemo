@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FirstViewController : UIViewController
+- (IBAction)back:(id)sender;
 @property (nullable, nonatomic) id <UIViewControllerTransitioningDelegate> transitionDelegate;
 @end

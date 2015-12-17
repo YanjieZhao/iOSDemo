@@ -18,9 +18,11 @@
 }
 
 -(id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source{
+    self.transition.presenting = YES;
     return self.transition;
 }
 -(id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed{
-    return nil;
+    self.transition.presenting = NO;
+    return self.transition;
 }
 @end
