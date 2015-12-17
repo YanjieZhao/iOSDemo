@@ -31,4 +31,11 @@
     FirstViewController *first= [storyBoard instantiateViewControllerWithIdentifier:@"FirstViewController"];
     [self presentViewController:first animated:YES completion:nil];
 }
+
+- (IBAction)interactive:(id)sender {
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"InteractiveTransitionStoryboard" bundle:nil];
+    
+    UINavigationController *naviController = [storyBoard instantiateViewControllerWithIdentifier:@"InteractiveTransitionNavigationController"];
+    [self presentViewController:naviController animated:YES completion:nil];
+}
 @end

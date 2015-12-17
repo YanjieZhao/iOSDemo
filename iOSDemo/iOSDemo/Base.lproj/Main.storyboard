@@ -24,16 +24,27 @@
                                     <action selector="navigationPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jVJ-g3-5fz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQE-PV-us9">
+                                <rect key="frame" x="176" y="28" width="139" height="30"/>
+                                <state key="normal" title="InteractiveTransition"/>
+                                <connections>
+                                    <action selector="interactive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3rK-8Z-tz2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ggH-ck-ch1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="8qr-uF-x5J"/>
                             <constraint firstItem="ggH-ck-ch1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="E0s-yP-hgH"/>
+                            <constraint firstItem="oQE-PV-us9" firstAttribute="leading" secondItem="ggH-ck-ch1" secondAttribute="trailing" constant="38" id="LE9-Db-no8"/>
+                            <constraint firstItem="ggH-ck-ch1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="MYK-bH-opL"/>
+                            <constraint firstItem="oQE-PV-us9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="ZoA-JB-bys"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="539" y="474"/>
         </scene>
     </scenes>
 </document>

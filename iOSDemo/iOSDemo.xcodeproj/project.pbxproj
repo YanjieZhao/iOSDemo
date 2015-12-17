@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7CB617BDA3FAE58084FC55D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9309773C8356C8CC743EB8DE /* libPods.a */; };
+		E6A03EC11C225CB1007B0222 /* InteractiveTransitionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A03EC01C225CB1007B0222 /* InteractiveTransitionStoryboard.storyboard */; };
+		E6A03EC41C225D0F007B0222 /* InteractiveTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A03EC31C225D0F007B0222 /* InteractiveTransitionViewController.m */; };
+		E6A03EC71C225F15007B0222 /* InteractiveNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A03EC61C225F15007B0222 /* InteractiveNavigationController.m */; };
+		E6A03ECE1C22655D007B0222 /* ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6A03ECC1C22655D007B0222 /* ipad.jpg */; };
+		E6A03ECF1C22655D007B0222 /* iphone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E6A03ECD1C22655D007B0222 /* iphone.jpg */; };
+		E6A03ED21C226819007B0222 /* NavigationControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A03ED11C226819007B0222 /* NavigationControllerDelegate.m */; };
+		E6A03ED51C226A02007B0222 /* CircleTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A03ED41C226A02007B0222 /* CircleTransitionAnimator.m */; };
 		E6D2EB0A1C2234A700F46DF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D2EB091C2234A700F46DF8 /* main.m */; };
 		E6D2EB0D1C2234A700F46DF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D2EB0C1C2234A700F46DF8 /* AppDelegate.m */; };
 		E6D2EB101C2234A700F46DF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D2EB0F1C2234A700F46DF8 /* ViewController.m */; };
@@ -25,6 +32,17 @@
 		42D611006D9658E99DF62A38 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		92370F702CCFB84E9D418736 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9309773C8356C8CC743EB8DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6A03EC01C225CB1007B0222 /* InteractiveTransitionStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InteractiveTransitionStoryboard.storyboard; sourceTree = "<group>"; };
+		E6A03EC21C225D0F007B0222 /* InteractiveTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveTransitionViewController.h; sourceTree = "<group>"; };
+		E6A03EC31C225D0F007B0222 /* InteractiveTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveTransitionViewController.m; sourceTree = "<group>"; };
+		E6A03EC51C225F15007B0222 /* InteractiveNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveNavigationController.h; sourceTree = "<group>"; };
+		E6A03EC61C225F15007B0222 /* InteractiveNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveNavigationController.m; sourceTree = "<group>"; };
+		E6A03ECC1C22655D007B0222 /* ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ipad.jpg; sourceTree = "<group>"; };
+		E6A03ECD1C22655D007B0222 /* iphone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iphone.jpg; sourceTree = "<group>"; };
+		E6A03ED01C226819007B0222 /* NavigationControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationControllerDelegate.h; sourceTree = "<group>"; };
+		E6A03ED11C226819007B0222 /* NavigationControllerDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationControllerDelegate.m; sourceTree = "<group>"; };
+		E6A03ED31C226A02007B0222 /* CircleTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleTransitionAnimator.h; sourceTree = "<group>"; };
+		E6A03ED41C226A02007B0222 /* CircleTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleTransitionAnimator.m; sourceTree = "<group>"; };
 		E6D2EB051C2234A700F46DF8 /* iOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D2EB091C2234A700F46DF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6D2EB0B1C2234A700F46DF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,6 +84,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E6A03EBF1C225C8C007B0222 /* InteractiveTransition */ = {
+			isa = PBXGroup;
+			children = (
+				E6A03EC01C225CB1007B0222 /* InteractiveTransitionStoryboard.storyboard */,
+				E6A03EC21C225D0F007B0222 /* InteractiveTransitionViewController.h */,
+				E6A03EC31C225D0F007B0222 /* InteractiveTransitionViewController.m */,
+				E6A03EC51C225F15007B0222 /* InteractiveNavigationController.h */,
+				E6A03EC61C225F15007B0222 /* InteractiveNavigationController.m */,
+				E6A03ED01C226819007B0222 /* NavigationControllerDelegate.h */,
+				E6A03ED11C226819007B0222 /* NavigationControllerDelegate.m */,
+				E6A03ED31C226A02007B0222 /* CircleTransitionAnimator.h */,
+				E6A03ED41C226A02007B0222 /* CircleTransitionAnimator.m */,
+			);
+			name = InteractiveTransition;
+			sourceTree = "<group>";
+		};
 		E6D2EAFC1C2234A700F46DF8 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +121,8 @@
 		E6D2EB071C2234A700F46DF8 /* iOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E6A03ECC1C22655D007B0222 /* ipad.jpg */,
+				E6A03ECD1C22655D007B0222 /* iphone.jpg */,
 				E6D2EB1F1C2235A700F46DF8 /* Navigation */,
 				E6D2EB0B1C2234A700F46DF8 /* AppDelegate.h */,
 				E6D2EB0C1C2234A700F46DF8 /* AppDelegate.m */,
@@ -112,6 +148,7 @@
 		E6D2EB1F1C2235A700F46DF8 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				E6A03EBF1C225C8C007B0222 /* InteractiveTransition */,
 				E6D2EB201C2235CE00F46DF8 /* FirstViewController.h */,
 				E6D2EB211C2235CE00F46DF8 /* FirstViewController.m */,
 				E6D2EB231C2235DD00F46DF8 /* SecondViewController.h */,
@@ -195,7 +232,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6D2EB181C2234A700F46DF8 /* LaunchScreen.storyboard in Resources */,
+				E6A03ECE1C22655D007B0222 /* ipad.jpg in Resources */,
+				E6A03EC11C225CB1007B0222 /* InteractiveTransitionStoryboard.storyboard in Resources */,
 				E6D2EB151C2234A700F46DF8 /* Assets.xcassets in Resources */,
+				E6A03ECF1C22655D007B0222 /* iphone.jpg in Resources */,
 				E6D2EB131C2234A700F46DF8 /* Main.storyboard in Resources */,
 				E6D2EB271C2235EF00F46DF8 /* NavigationStoryboard.storyboard in Resources */,
 			);
@@ -256,11 +296,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6A03EC41C225D0F007B0222 /* InteractiveTransitionViewController.m in Sources */,
 				E6D2EB251C2235DD00F46DF8 /* SecondViewController.m in Sources */,
+				E6A03ED21C226819007B0222 /* NavigationControllerDelegate.m in Sources */,
 				E6D2EB101C2234A700F46DF8 /* ViewController.m in Sources */,
 				E6D2EB2A1C22367700F46DF8 /* PopAnimater.m in Sources */,
+				E6A03ED51C226A02007B0222 /* CircleTransitionAnimator.m in Sources */,
 				E6D2EB0D1C2234A700F46DF8 /* AppDelegate.m in Sources */,
 				E6D2EB2D1C22371000F46DF8 /* PopTransitioningDelegate.m in Sources */,
+				E6A03EC71C225F15007B0222 /* InteractiveNavigationController.m in Sources */,
 				E6D2EB0A1C2234A700F46DF8 /* main.m in Sources */,
 				E6D2EB221C2235CE00F46DF8 /* FirstViewController.m in Sources */,
 			);

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ehn-fg-i31">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Interactive Transition View Controller-->
+        <scene sceneID="aNd-Kt-jWF">
+            <objects>
+                <viewController storyboardIdentifier="InteractiveTransitionViewController" id="tDK-Go-GGB" customClass="InteractiveTransitionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="agu-Di-xop"/>
+                        <viewControllerLayoutGuide type="bottom" id="Eli-a8-H8L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="00z-AL-mVh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ete-WZ-dIZ">
+                                <rect key="frame" x="546" y="30" width="44" height="44"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="tJQ-rz-n7H"/>
+                                    <constraint firstAttribute="width" constant="44" id="u62-1U-bV8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="2N9-Oo-Ka6" kind="show" identifier="PushSegue" id="nTD-F1-FU9"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ipad.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="qHn-kp-IIf">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="WKL-BY-FTW"/>
+                                    <constraint firstAttribute="width" constant="300" id="jTR-1l-CXQ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ete-WZ-dIZ" firstAttribute="top" secondItem="agu-Di-xop" secondAttribute="bottom" constant="10" id="6pO-G8-Mgq"/>
+                            <constraint firstAttribute="trailing" secondItem="Ete-WZ-dIZ" secondAttribute="trailing" constant="10" id="JBT-H3-cAw"/>
+                            <constraint firstItem="qHn-kp-IIf" firstAttribute="centerX" secondItem="00z-AL-mVh" secondAttribute="centerX" id="KsN-al-EWj"/>
+                            <constraint firstItem="qHn-kp-IIf" firstAttribute="centerY" secondItem="00z-AL-mVh" secondAttribute="centerY" id="ZJI-sC-ilK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tZV-qs-cqW"/>
+                    <connections>
+                        <outlet property="button" destination="Ete-WZ-dIZ" id="Wcf-r7-tBI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="snz-fP-mQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1274" y="414"/>
+        </scene>
+        <!--Interactive Transition View Controller-->
+        <scene sceneID="kCL-aI-Kqi">
+            <objects>
+                <viewController id="2N9-Oo-Ka6" customClass="InteractiveTransitionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2m8-o3-yGy"/>
+                        <viewControllerLayoutGuide type="bottom" id="8DM-DQ-bdX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UWJ-u0-T0n">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qpt-PK-IPU">
+                                <rect key="frame" x="546" y="30" width="44" height="44"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="DYN-nL-mbA"/>
+                                    <constraint firstAttribute="width" constant="44" id="n5m-TU-up4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="circleTapped:" destination="2N9-Oo-Ka6" eventType="touchUpInside" id="Unz-Vd-SPk"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vLf-ec-f3Q">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="SaX-kN-O72"/>
+                                    <constraint firstAttribute="height" constant="300" id="j3T-hb-fXS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Qpt-PK-IPU" secondAttribute="trailing" constant="10" id="4LH-zX-dd3"/>
+                            <constraint firstItem="Qpt-PK-IPU" firstAttribute="top" secondItem="2m8-o3-yGy" secondAttribute="bottom" constant="10" id="7je-gA-22v"/>
+                            <constraint firstItem="vLf-ec-f3Q" firstAttribute="centerX" secondItem="UWJ-u0-T0n" secondAttribute="centerX" id="TuE-9K-sBj"/>
+                            <constraint firstItem="vLf-ec-f3Q" firstAttribute="centerY" secondItem="UWJ-u0-T0n" secondAttribute="centerY" id="aHm-01-Kqm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="Qpt-PK-IPU" id="WAe-o9-t9h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qkh-SH-rgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1913" y="414"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="r7V-ec-fAC">
+            <objects>
+                <navigationController storyboardIdentifier="InteractiveTransitionNavigationController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Ehn-fg-i31" customClass="InteractiveNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IGf-my-4NT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <outlet property="delegate" destination="vNl-EI-93F" id="p67-Ec-5BE"/>
+                        <segue destination="tDK-Go-GGB" kind="relationship" relationship="rootViewController" id="IJp-3b-Hfv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iZZ-Rb-aL9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="vNl-EI-93F" customClass="NavigationControllerDelegate">
+                    <connections>
+                        <outlet property="navigationController" destination="Ehn-fg-i31" id="B8w-l1-cG1"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="495" y="414"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ipad.jpg" width="984" height="562"/>
+        <image name="iphone.jpg" width="1200" height="1200"/>
+    </resources>
+</document>
