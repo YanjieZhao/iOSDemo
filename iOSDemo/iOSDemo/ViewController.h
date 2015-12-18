@@ -12,5 +12,6 @@
 - (IBAction)navigationPage:(id)sender;
 - (IBAction)interactive:(id)sender;
 - (IBAction)networkStatus:(id)sender;
+- (IBAction)touchClick:(id)sender;
 @end
 

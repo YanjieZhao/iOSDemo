@@ -23,7 +23,7 @@
     UIButton *button = fromViewController.button;
     
     [containerView addSubview:toViewController.view];
-    CGRect rect = button.frame;
+    
     UIBezierPath *circleMaskPathInitial = [UIBezierPath bezierPathWithOvalInRect:button.frame];
     CGPoint extremePoint = CGPointMake(button.center.x - 0, button.center.y - CGRectGetHeight(toViewController.view.bounds));
     float radius = sqrt((extremePoint.x*extremePoint.x) + (extremePoint.y * extremePoint.y));

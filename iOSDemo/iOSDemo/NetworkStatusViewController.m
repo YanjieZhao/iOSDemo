@@ -67,7 +67,25 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(NSArray<id<UIPreviewActionItem>> *)previewActionItems{
+    id action1 = [self previewActionForTitle:@"Default Action" style:UIPreviewActionStyleDefault];
+    id action2 = [self previewActionForTitle:@"Destructive Action" style:UIPreviewActionStyleDestructive];
+    
+    id subAction1 = [self previewActionForTitle:@"Sub Action 1" style:UIPreviewActionStyleDefault];
+    id subAction2 = [self previewActionForTitle:@"Sub Action 2" style:UIPreviewActionStyleDefault];
+    
+    id groupedActions = [UIPreviewActionGroup actionGroupWithTitle:@"Sub Actions..." style:UIPreviewActionStyleDefault actions:[NSArray arrayWithObjects:subAction1, subAction2, nil]];
+    
+    NSArray *previewActions = [NSArray arrayWithObjects:action1, action2, groupedActions, nil];
+    return previewActions;
+}
 
+-(UIPreviewAction *)previewActionForTitle:(NSString *) title  style:(UIPreviewActionStyle) Style{
+    UIPreviewAction *action = [UIPreviewAction actionWithTitle:title style:Style handler:^(UIPreviewAction * _Nonnull action, UIViewController * _Nonnull previewViewController) {
+        NSLog(@"test");
+    }];
+    return action;
+}
 /*
 #pragma mark - Navigation
 

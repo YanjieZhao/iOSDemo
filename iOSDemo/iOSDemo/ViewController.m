@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "FirstViewController.h"
 #import "NetworkStatusViewController.h"
+#import "TouchViewController.h"
 
 @interface ViewController ()
 
@@ -19,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    //UIApplicationShortcutItem* item = [[UIApplicationShortcutItem alloc] initWithType:UIApplicationShortcutIconTypeAdd localizedTitle:@"Add"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,5 +47,10 @@
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"NetworkStatusStoryboard" bundle:nil];
     UIViewController *viewController = [storyBoard instantiateViewControllerWithIdentifier:@"NetworkStatusViewController"];
     [self presentViewController:viewController animated:YES completion:nil];
+}
+
+- (IBAction)touchClick:(id)sender {
+    TouchViewController *controller = [[TouchViewController alloc] init];
+    [self presentViewController:controller animated:YES completion:nil];
 }
 @end

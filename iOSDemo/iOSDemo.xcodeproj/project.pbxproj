@@ -18,6 +18,8 @@
 		E6A03ED81C22B167007B0222 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A03ED71C22B167007B0222 /* CoreTelephony.framework */; };
 		E6A03EDA1C22B318007B0222 /* NetworkStatusStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A03ED91C22B318007B0222 /* NetworkStatusStoryboard.storyboard */; };
 		E6A03EDD1C22B391007B0222 /* NetworkStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A03EDC1C22B391007B0222 /* NetworkStatusViewController.m */; };
+		E6A03EE21C23A722007B0222 /* TouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A03EE01C23A722007B0222 /* TouchViewController.m */; };
+		E6A03EE31C23A722007B0222 /* TouchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6A03EE11C23A722007B0222 /* TouchViewController.xib */; };
 		E6D2EB0A1C2234A700F46DF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D2EB091C2234A700F46DF8 /* main.m */; };
 		E6D2EB0D1C2234A700F46DF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D2EB0C1C2234A700F46DF8 /* AppDelegate.m */; };
 		E6D2EB101C2234A700F46DF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D2EB0F1C2234A700F46DF8 /* ViewController.m */; };
@@ -50,6 +52,9 @@
 		E6A03ED91C22B318007B0222 /* NetworkStatusStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NetworkStatusStoryboard.storyboard; sourceTree = "<group>"; };
 		E6A03EDB1C22B391007B0222 /* NetworkStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkStatusViewController.h; sourceTree = "<group>"; };
 		E6A03EDC1C22B391007B0222 /* NetworkStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkStatusViewController.m; sourceTree = "<group>"; };
+		E6A03EDF1C23A722007B0222 /* TouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchViewController.h; sourceTree = "<group>"; };
+		E6A03EE01C23A722007B0222 /* TouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchViewController.m; sourceTree = "<group>"; };
+		E6A03EE11C23A722007B0222 /* TouchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TouchViewController.xib; sourceTree = "<group>"; };
 		E6D2EB051C2234A700F46DF8 /* iOSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6D2EB091C2234A700F46DF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6D2EB0B1C2234A700F46DF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +124,16 @@
 			name = NetworkStatus;
 			sourceTree = "<group>";
 		};
+		E6A03EDE1C23A6E6007B0222 /* 3DTouch */ = {
+			isa = PBXGroup;
+			children = (
+				E6A03EDF1C23A722007B0222 /* TouchViewController.h */,
+				E6A03EE01C23A722007B0222 /* TouchViewController.m */,
+				E6A03EE11C23A722007B0222 /* TouchViewController.xib */,
+			);
+			name = 3DTouch;
+			sourceTree = "<group>";
+		};
 		E6D2EAFC1C2234A700F46DF8 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +155,7 @@
 		E6D2EB071C2234A700F46DF8 /* iOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E6A03EDE1C23A6E6007B0222 /* 3DTouch */,
 				E6A03ED61C22B136007B0222 /* NetworkStatus */,
 				E6A03ECC1C22655D007B0222 /* ipad.jpg */,
 				E6A03ECD1C22655D007B0222 /* iphone.jpg */,
@@ -255,6 +271,7 @@
 				E6A03EDA1C22B318007B0222 /* NetworkStatusStoryboard.storyboard in Resources */,
 				E6D2EB181C2234A700F46DF8 /* LaunchScreen.storyboard in Resources */,
 				E6A03ECE1C22655D007B0222 /* ipad.jpg in Resources */,
+				E6A03EE31C23A722007B0222 /* TouchViewController.xib in Resources */,
 				E6A03EC11C225CB1007B0222 /* InteractiveTransitionStoryboard.storyboard in Resources */,
 				E6D2EB151C2234A700F46DF8 /* Assets.xcassets in Resources */,
 				E6A03ECF1C22655D007B0222 /* iphone.jpg in Resources */,
@@ -324,6 +341,7 @@
 				E6A03ED21C226819007B0222 /* NavigationControllerDelegate.m in Sources */,
 				E6D2EB101C2234A700F46DF8 /* ViewController.m in Sources */,
 				E6D2EB2A1C22367700F46DF8 /* PopAnimater.m in Sources */,
+				E6A03EE21C23A722007B0222 /* TouchViewController.m in Sources */,
 				E6A03ED51C226A02007B0222 /* CircleTransitionAnimator.m in Sources */,
 				E6D2EB0D1C2234A700F46DF8 /* AppDelegate.m in Sources */,
 				E6D2EB2D1C22371000F46DF8 /* PopTransitioningDelegate.m in Sources */,
@@ -443,7 +461,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOSDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zyj.iOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -459,7 +477,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = iOSDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zyj.iOSDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
