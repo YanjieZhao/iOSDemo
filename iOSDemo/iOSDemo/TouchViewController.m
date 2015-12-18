@@ -66,13 +66,22 @@
     return cell;
 }
 -(UIViewController *)previewingContext:(id<UIViewControllerPreviewing>)previewingContext viewControllerForLocation:(CGPoint)location{
-    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:location];
+    CGPoint point = [self.tableView convertPoint:location fromView:self.view];
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:point];
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
+    if (cell != nil) {
+        NSLog(@"cell");
+    }
     
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"NetworkStatusStoryboard" bundle:nil];
     UIViewController *viewController = [storyBoard instantiateViewControllerWithIdentifier:@"NetworkStatusViewController"];
     viewController.preferredContentSize = CGSizeMake(0.0, 300.f);
-    [previewingContext setSourceRect:cell.frame];
+    
+    CGRect rect = cell.frame;
+    rect.origin = [self.view convertPoint:rect.origin fromView:self.tableView];
+    
+    [previewingContext setSourceRect:rect];
     return viewController;
     
 }

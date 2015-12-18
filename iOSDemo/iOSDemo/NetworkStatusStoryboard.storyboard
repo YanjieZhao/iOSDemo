@@ -29,12 +29,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Text" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bf7-IY-bwJ">
+                                <rect key="frame" x="20" y="96" width="560" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Bf7-IY-bwJ" secondAttribute="trailing" constant="20" id="6TM-MO-2fU"/>
+                            <constraint firstItem="Bf7-IY-bwJ" firstAttribute="centerX" secondItem="t5h-9S-1Aj" secondAttribute="centerX" id="FvA-Zd-55c"/>
+                            <constraint firstItem="Bf7-IY-bwJ" firstAttribute="top" secondItem="DMF-ID-8As" secondAttribute="bottom" constant="76" id="GJG-sd-FRN"/>
                             <constraint firstItem="JpE-DT-CNF" firstAttribute="leading" secondItem="sgh-WE-v1L" secondAttribute="trailing" constant="10" id="ZUN-WE-1sd"/>
                             <constraint firstItem="sgh-WE-v1L" firstAttribute="top" secondItem="DMF-ID-8As" secondAttribute="bottom" constant="10" id="dFk-d7-uuz"/>
                             <constraint firstItem="sgh-WE-v1L" firstAttribute="top" secondItem="DMF-ID-8As" secondAttribute="bottom" constant="10" id="eoh-lT-dyR"/>
+                            <constraint firstItem="Bf7-IY-bwJ" firstAttribute="leading" secondItem="t5h-9S-1Aj" secondAttribute="leading" constant="20" id="kvC-m8-qbR"/>
                             <constraint firstItem="JpE-DT-CNF" firstAttribute="top" secondItem="DMF-ID-8As" secondAttribute="bottom" constant="10" id="moT-Z9-Gmv"/>
                             <constraint firstItem="sgh-WE-v1L" firstAttribute="leading" secondItem="t5h-9S-1Aj" secondAttribute="leading" constant="10" id="vcw-oI-wxf"/>
                             <constraint firstItem="sgh-WE-v1L" firstAttribute="leading" secondItem="t5h-9S-1Aj" secondAttribute="leading" constant="10" id="wGH-xW-Mg1"/>
