@@ -121,6 +121,17 @@
     NSLog(@"%@", copy);
 }
 
+- (IBAction)userDefaultAction:(id)sender {
+    //NSUserDefaults支持的数据格式有：NSNumber（Integer、Float、Double），NSString，NSDate，NSArray，NSDictionary，BOOL
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSObject *obj = [defaults objectForKey:@"username"];
+    NSLog(@"%@", [defaults objectForKey:@"aihao"]);
+    [[NSUserDefaults standardUserDefaults] setInteger:1 forKey:@"intkey"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+    
+    int value = [[NSUserDefaults standardUserDefaults] integerForKey:@"intkey"];
+}
+
 -(NSString *)documentPath{
     NSArray *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentDirectory = [path objectAtIndex:0];

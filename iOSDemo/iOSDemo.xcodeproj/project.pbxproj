@@ -10,6 +10,7 @@
 		7CB617BDA3FAE58084FC55D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9309773C8356C8CC743EB8DE /* libPods.a */; };
 		E63FCCA21C2A7D46008681E8 /* FileIOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63FCCA01C2A7D46008681E8 /* FileIOViewController.m */; };
 		E63FCCA31C2A7D46008681E8 /* FileIOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63FCCA11C2A7D46008681E8 /* FileIOViewController.xib */; };
+		E63FCCA51C2A9852008681E8 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E63FCCA41C2A9852008681E8 /* Settings.bundle */; };
 		E6A03EC11C225CB1007B0222 /* InteractiveTransitionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A03EC01C225CB1007B0222 /* InteractiveTransitionStoryboard.storyboard */; };
 		E6A03EC41C225D0F007B0222 /* InteractiveTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A03EC31C225D0F007B0222 /* InteractiveTransitionViewController.m */; };
 		E6A03EC71C225F15007B0222 /* InteractiveNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A03EC61C225F15007B0222 /* InteractiveNavigationController.m */; };
@@ -42,6 +43,7 @@
 		E63FCC9F1C2A7D46008681E8 /* FileIOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileIOViewController.h; sourceTree = "<group>"; };
 		E63FCCA01C2A7D46008681E8 /* FileIOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileIOViewController.m; sourceTree = "<group>"; };
 		E63FCCA11C2A7D46008681E8 /* FileIOViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileIOViewController.xib; sourceTree = "<group>"; };
+		E63FCCA41C2A9852008681E8 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		E6A03EC01C225CB1007B0222 /* InteractiveTransitionStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InteractiveTransitionStoryboard.storyboard; sourceTree = "<group>"; };
 		E6A03EC21C225D0F007B0222 /* InteractiveTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveTransitionViewController.h; sourceTree = "<group>"; };
 		E6A03EC31C225D0F007B0222 /* InteractiveTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveTransitionViewController.m; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				E6D2EB161C2234A700F46DF8 /* LaunchScreen.storyboard */,
 				E6D2EB191C2234A700F46DF8 /* Info.plist */,
 				E6D2EB081C2234A700F46DF8 /* Supporting Files */,
+				E63FCCA41C2A9852008681E8 /* Settings.bundle */,
 			);
 			path = iOSDemo;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				E6D2EB151C2234A700F46DF8 /* Assets.xcassets in Resources */,
 				E6A03ECF1C22655D007B0222 /* iphone.jpg in Resources */,
 				E6D2EB131C2234A700F46DF8 /* Main.storyboard in Resources */,
+				E63FCCA51C2A9852008681E8 /* Settings.bundle in Resources */,
 				E6D2EB271C2235EF00F46DF8 /* NavigationStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

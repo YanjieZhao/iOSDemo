@@ -57,9 +57,17 @@
                         <action selector="plistAction:" destination="-1" eventType="touchUpInside" id="ljz-L7-XpS"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrS-Rr-nT0">
+                    <rect key="frame" x="8" y="248" width="94" height="30"/>
+                    <state key="normal" title="User Defaults"/>
+                    <connections>
+                        <action selector="userDefaultAction:" destination="-1" eventType="touchUpInside" id="e8W-WN-g2Y"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="JrS-Rr-nT0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="06J-mQ-YjB"/>
                 <constraint firstItem="HVE-6V-K0Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="0XS-60-L0f"/>
                 <constraint firstItem="PH1-Yr-QRP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="8vq-mr-kso"/>
                 <constraint firstItem="qU3-wa-wVM" firstAttribute="top" secondItem="PH1-Yr-QRP" secondAttribute="bottom" constant="8" id="A2W-UX-TjZ"/>
@@ -70,6 +78,7 @@
                 <constraint firstItem="8pH-Vj-MpO" firstAttribute="top" secondItem="BGL-Dw-zqW" secondAttribute="bottom" constant="8" id="Me8-bi-5Gn"/>
                 <constraint firstItem="qU3-wa-wVM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="RiB-RK-deR"/>
                 <constraint firstItem="I6a-WD-gXI" firstAttribute="top" secondItem="qU3-wa-wVM" secondAttribute="bottom" constant="8" id="bMq-Du-dTL"/>
+                <constraint firstItem="JrS-Rr-nT0" firstAttribute="top" secondItem="HVE-6V-K0Q" secondAttribute="bottom" constant="8" id="qNr-gJ-Dnl"/>
                 <constraint firstItem="PH1-Yr-QRP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="tSH-vb-bQk"/>
                 <constraint firstItem="I6a-WD-gXI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="tjs-Ks-r8v"/>
             </constraints>
