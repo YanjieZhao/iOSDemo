@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FileIOViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PH1-Yr-QRP">
+                    <rect key="frame" x="8" y="20" width="90" height="30"/>
+                    <state key="normal" title="读取内嵌文件"/>
+                    <connections>
+                        <action selector="handleEmbedFile:" destination="-1" eventType="touchUpInside" id="ZPK-O7-zdC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qU3-wa-wVM">
+                    <rect key="frame" x="8" y="58" width="39" height="30"/>
+                    <state key="normal" title="C File"/>
+                    <connections>
+                        <action selector="handleCStyleFile:" destination="-1" eventType="touchUpInside" id="Zyk-Jo-GeF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6a-WD-gXI">
+                    <rect key="frame" x="8" y="96" width="48" height="30"/>
+                    <state key="normal" title="NS File"/>
+                    <connections>
+                        <action selector="handleNSStyleFile:" destination="-1" eventType="touchUpInside" id="a6e-ux-QCT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGL-Dw-zqW">
+                    <rect key="frame" x="8" y="134" width="60" height="30"/>
+                    <state key="normal" title="目录相关"/>
+                    <connections>
+                        <action selector="folderClick:" destination="-1" eventType="touchUpInside" id="ZvA-qb-gt1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pH-Vj-MpO">
+                    <rect key="frame" x="8" y="172" width="75" height="30"/>
+                    <state key="normal" title="创建文件夹"/>
+                    <connections>
+                        <action selector="createFolder:" destination="-1" eventType="touchUpInside" id="BZJ-Ec-emZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVE-6V-K0Q">
+                    <rect key="frame" x="8" y="210" width="30" height="30"/>
+                    <state key="normal" title="plist"/>
+                    <connections>
+                        <action selector="plistAction:" destination="-1" eventType="touchUpInside" id="ljz-L7-XpS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HVE-6V-K0Q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="0XS-60-L0f"/>
+                <constraint firstItem="PH1-Yr-QRP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="8vq-mr-kso"/>
+                <constraint firstItem="qU3-wa-wVM" firstAttribute="top" secondItem="PH1-Yr-QRP" secondAttribute="bottom" constant="8" id="A2W-UX-TjZ"/>
+                <constraint firstItem="8pH-Vj-MpO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="AWO-wd-HP7"/>
+                <constraint firstItem="BGL-Dw-zqW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="GHl-rN-en4"/>
+                <constraint firstItem="HVE-6V-K0Q" firstAttribute="top" secondItem="8pH-Vj-MpO" secondAttribute="bottom" constant="8" id="IcA-2H-yyg"/>
+                <constraint firstItem="BGL-Dw-zqW" firstAttribute="top" secondItem="I6a-WD-gXI" secondAttribute="bottom" constant="8" id="LvW-CS-tAo"/>
+                <constraint firstItem="8pH-Vj-MpO" firstAttribute="top" secondItem="BGL-Dw-zqW" secondAttribute="bottom" constant="8" id="Me8-bi-5Gn"/>
+                <constraint firstItem="qU3-wa-wVM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="RiB-RK-deR"/>
+                <constraint firstItem="I6a-WD-gXI" firstAttribute="top" secondItem="qU3-wa-wVM" secondAttribute="bottom" constant="8" id="bMq-Du-dTL"/>
+                <constraint firstItem="PH1-Yr-QRP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="tSH-vb-bQk"/>
+                <constraint firstItem="I6a-WD-gXI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="tjs-Ks-r8v"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

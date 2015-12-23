@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7CB617BDA3FAE58084FC55D2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9309773C8356C8CC743EB8DE /* libPods.a */; };
+		E63FCCA21C2A7D46008681E8 /* FileIOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E63FCCA01C2A7D46008681E8 /* FileIOViewController.m */; };
+		E63FCCA31C2A7D46008681E8 /* FileIOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E63FCCA11C2A7D46008681E8 /* FileIOViewController.xib */; };
 		E6A03EC11C225CB1007B0222 /* InteractiveTransitionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A03EC01C225CB1007B0222 /* InteractiveTransitionStoryboard.storyboard */; };
 		E6A03EC41C225D0F007B0222 /* InteractiveTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A03EC31C225D0F007B0222 /* InteractiveTransitionViewController.m */; };
 		E6A03EC71C225F15007B0222 /* InteractiveNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A03EC61C225F15007B0222 /* InteractiveNavigationController.m */; };
@@ -37,6 +39,9 @@
 		42D611006D9658E99DF62A38 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		92370F702CCFB84E9D418736 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9309773C8356C8CC743EB8DE /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E63FCC9F1C2A7D46008681E8 /* FileIOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileIOViewController.h; sourceTree = "<group>"; };
+		E63FCCA01C2A7D46008681E8 /* FileIOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileIOViewController.m; sourceTree = "<group>"; };
+		E63FCCA11C2A7D46008681E8 /* FileIOViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileIOViewController.xib; sourceTree = "<group>"; };
 		E6A03EC01C225CB1007B0222 /* InteractiveTransitionStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = InteractiveTransitionStoryboard.storyboard; sourceTree = "<group>"; };
 		E6A03EC21C225D0F007B0222 /* InteractiveTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InteractiveTransitionViewController.h; sourceTree = "<group>"; };
 		E6A03EC31C225D0F007B0222 /* InteractiveTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InteractiveTransitionViewController.m; sourceTree = "<group>"; };
@@ -98,6 +103,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E63FCC9E1C2A7D22008681E8 /* FileIO */ = {
+			isa = PBXGroup;
+			children = (
+				E63FCC9F1C2A7D46008681E8 /* FileIOViewController.h */,
+				E63FCCA01C2A7D46008681E8 /* FileIOViewController.m */,
+				E63FCCA11C2A7D46008681E8 /* FileIOViewController.xib */,
+			);
+			name = FileIO;
+			sourceTree = "<group>";
+		};
 		E6A03EBF1C225C8C007B0222 /* InteractiveTransition */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +170,7 @@
 		E6D2EB071C2234A700F46DF8 /* iOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E63FCC9E1C2A7D22008681E8 /* FileIO */,
 				E6A03EDE1C23A6E6007B0222 /* 3DTouch */,
 				E6A03ED61C22B136007B0222 /* NetworkStatus */,
 				E6A03ECC1C22655D007B0222 /* ipad.jpg */,
@@ -270,6 +286,7 @@
 			files = (
 				E6A03EDA1C22B318007B0222 /* NetworkStatusStoryboard.storyboard in Resources */,
 				E6D2EB181C2234A700F46DF8 /* LaunchScreen.storyboard in Resources */,
+				E63FCCA31C2A7D46008681E8 /* FileIOViewController.xib in Resources */,
 				E6A03ECE1C22655D007B0222 /* ipad.jpg in Resources */,
 				E6A03EE31C23A722007B0222 /* TouchViewController.xib in Resources */,
 				E6A03EC11C225CB1007B0222 /* InteractiveTransitionStoryboard.storyboard in Resources */,
@@ -341,6 +358,7 @@
 				E6A03ED21C226819007B0222 /* NavigationControllerDelegate.m in Sources */,
 				E6D2EB101C2234A700F46DF8 /* ViewController.m in Sources */,
 				E6D2EB2A1C22367700F46DF8 /* PopAnimater.m in Sources */,
+				E63FCCA21C2A7D46008681E8 /* FileIOViewController.m in Sources */,
 				E6A03EE21C23A722007B0222 /* TouchViewController.m in Sources */,
 				E6A03ED51C226A02007B0222 /* CircleTransitionAnimator.m in Sources */,
 				E6D2EB0D1C2234A700F46DF8 /* AppDelegate.m in Sources */,

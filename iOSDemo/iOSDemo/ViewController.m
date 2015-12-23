@@ -10,6 +10,7 @@
 #import "FirstViewController.h"
 #import "NetworkStatusViewController.h"
 #import "TouchViewController.h"
+#import "FileIOViewController.h"
 
 @interface ViewController ()
 
@@ -51,6 +52,11 @@
 
 - (IBAction)touchClick:(id)sender {
     TouchViewController *controller = [[TouchViewController alloc] init];
+    [self presentViewController:controller animated:YES completion:nil];
+}
+
+- (IBAction)fileIOClick:(id)sender {
+    FileIOViewController *controller = [[FileIOViewController alloc] init];
     [self presentViewController:controller animated:YES completion:nil];
 }
 @end
