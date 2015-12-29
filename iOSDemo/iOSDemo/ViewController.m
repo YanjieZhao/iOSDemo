@@ -23,6 +23,8 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     //UIApplicationShortcutItem* item = [[UIApplicationShortcutItem alloc] initWithType:UIApplicationShortcutIconTypeAdd localizedTitle:@"Add"];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,6 +59,12 @@
 
 - (IBAction)fileIOClick:(id)sender {
     FileIOViewController *controller = [[FileIOViewController alloc] init];
+    [self presentViewController:controller animated:YES completion:nil];
+}
+
+- (IBAction)operationClick:(id)sender {
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"NSOperationStoryboard" bundle:nil];
+    UINavigationController *controller = [storyBoard instantiateViewControllerWithIdentifier:@"NSOperationNavigation"];
     [self presentViewController:controller animated:YES completion:nil];
 }
 @end

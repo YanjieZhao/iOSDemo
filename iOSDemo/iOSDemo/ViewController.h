@@ -14,5 +14,6 @@
 - (IBAction)networkStatus:(id)sender;
 - (IBAction)touchClick:(id)sender;
 - (IBAction)fileIOClick:(id)sender;
+- (IBAction)operationClick:(id)sender;
 @end
 

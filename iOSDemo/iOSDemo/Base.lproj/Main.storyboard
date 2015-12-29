@@ -52,6 +52,13 @@
                                     <action selector="fileIOClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rv9-lG-2fm"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWl-zF-d5E">
+                                <rect key="frame" x="158" y="106" width="89" height="30"/>
+                                <state key="normal" title="NSOperation"/>
+                                <connections>
+                                    <action selector="operationClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MFO-jV-cmK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
