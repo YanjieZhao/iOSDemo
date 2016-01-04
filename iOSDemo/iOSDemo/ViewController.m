@@ -13,6 +13,8 @@
 #import "FileIOViewController.h"
 #import "RootViewController.h"
 #import "SDWebImageTableViewController.h"
+#import "FMDBViewController.h"
+#import "MantleDemoViewController.h"
 
 @interface ViewController ()
 
@@ -78,6 +80,16 @@
 - (IBAction)sdWebImageClick:(id)sender {
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"SDWebImageStoryboard" bundle:nil];
     UIViewController *controller = [storyBoard instantiateViewControllerWithIdentifier:@"webimagecontroller"];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (IBAction)fmdbClick:(id)sender {
+    FMDBViewController *controller = [[FMDBViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (IBAction)mantleClick:(id)sender {
+    MantleDemoViewController *controller = [[MantleDemoViewController alloc] init];
     [self.navigationController pushViewController:controller animated:YES];
 }
 @end

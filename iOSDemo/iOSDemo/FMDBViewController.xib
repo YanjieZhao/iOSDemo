@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FMDBViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyK-6u-ODO">
+                    <rect key="frame" x="8" y="70" width="30" height="30"/>
+                    <state key="normal" title="增加"/>
+                    <connections>
+                        <action selector="addClick:" destination="-1" eventType="touchUpInside" id="jBN-WK-sco"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mXR-Hb-ahV">
+                    <rect key="frame" x="8" y="108" width="30" height="30"/>
+                    <state key="normal" title="删除"/>
+                    <connections>
+                        <action selector="deleteClick:" destination="-1" eventType="touchUpInside" id="rM7-j1-QCd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Id6-Wf-dQM">
+                    <rect key="frame" x="8" y="146" width="30" height="30"/>
+                    <state key="normal" title="修改"/>
+                    <connections>
+                        <action selector="modifyClick:" destination="-1" eventType="touchUpInside" id="oXa-zu-Qlt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="im3-r9-8qQ">
+                    <rect key="frame" x="8" y="184" width="30" height="30"/>
+                    <state key="normal" title="查找"/>
+                    <connections>
+                        <action selector="queryClick:" destination="-1" eventType="touchUpInside" id="5MX-l1-xRz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddz-6f-A8T">
+                    <rect key="frame" x="8" y="222" width="60" height="30"/>
+                    <state key="normal" title="性能测试"/>
+                    <connections>
+                        <action selector="performanceClick:" destination="-1" eventType="touchUpInside" id="tLG-di-CMq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="im3-r9-8qQ" firstAttribute="top" secondItem="Id6-Wf-dQM" secondAttribute="bottom" constant="8" id="4vS-dD-mux"/>
+                <constraint firstItem="RyK-6u-ODO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="9Hn-LZ-hPV"/>
+                <constraint firstItem="RyK-6u-ODO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="D4I-ib-QHJ"/>
+                <constraint firstItem="Ddz-6f-A8T" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="JVC-gh-UMc"/>
+                <constraint firstItem="Ddz-6f-A8T" firstAttribute="top" secondItem="im3-r9-8qQ" secondAttribute="bottom" constant="8" id="Lp5-3X-sGX"/>
+                <constraint firstItem="im3-r9-8qQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="aSS-H5-cQh"/>
+                <constraint firstItem="Id6-Wf-dQM" firstAttribute="top" secondItem="mXR-Hb-ahV" secondAttribute="bottom" constant="8" id="dDd-lK-dx1"/>
+                <constraint firstItem="Id6-Wf-dQM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="dqx-NG-n69"/>
+                <constraint firstItem="mXR-Hb-ahV" firstAttribute="top" secondItem="RyK-6u-ODO" secondAttribute="bottom" constant="8" id="fbd-vT-xdt"/>
+                <constraint firstItem="mXR-Hb-ahV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="i83-YL-fKN"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

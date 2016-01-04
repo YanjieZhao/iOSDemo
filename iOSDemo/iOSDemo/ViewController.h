@@ -17,5 +17,7 @@
 - (IBAction)operationClick:(id)sender;
 - (IBAction)uinavigationClick:(id)sender;
 - (IBAction)sdWebImageClick:(id)sender;
+- (IBAction)fmdbClick:(id)sender;
+- (IBAction)mantleClick:(id)sender;
 @end
 
