@@ -9,7 +9,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FMDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Mantle.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>38688B1D2E4C5646C6D8FFB8AC16EF8D</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3F27EFD483348FF212FDAE0D34ADD636</key>
+		<key>5274848432142B064787A7B27709C558</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>5B1ED694D2C3F157E2A8DC8EC282E84C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5D4694CECEAD7E9AA4EA881D9A6BBBCB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F12FB4A63E20F601CFB2E64A65B57C1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BCB241187BD68F4707C44A074294DDBB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F91D6B31522086C0F543519179CC3ADF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

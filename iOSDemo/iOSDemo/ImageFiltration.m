@@ -23,14 +23,20 @@
     if (self.photoRecord.state != Downloaded) {
         return;
     }
+    //self.photoRecord.state = Filtered;
+    
     UIImage *filteredImage = [self applySepiaFilter:self.photoRecord.image];
     if (filteredImage != nil) {
         self.photoRecord.image = filteredImage;
         self.photoRecord.state = Filtered;
     }
+    else{
+        self.photoRecord.state = Filtered;
+    }
 }
 
 -(UIImage *)applySepiaFilter:(UIImage *)image{
+    //NSLog(@"filter");
     CIImage *inputImage = [[CIImage alloc] initWithImage:image];
     CIContext *context = [[CIContext alloc] init];
     CIFilter *filter = [CIFilter filterWithName:@"CISepiaTone"];
@@ -38,6 +44,9 @@
     [filter setValue:[NSNumber numberWithFloat:0.8] forKey:@"inputIntensity"];
     id outputImage = filter.outputImage;
     struct CGImage *outImage = [context createCGImage:outputImage fromRect:[outputImage extent]];
-    return [UIImage imageWithCGImage:outImage];
+
+    UIImage *returnValue = [UIImage imageWithCGImage:outImage];
+    CGImageRelease(outImage);
+    return returnValue;
 }
 @end

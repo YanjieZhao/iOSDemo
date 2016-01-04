@@ -14,11 +14,11 @@
     if (self != nil) {
         self.downloadQueue = [[NSOperationQueue alloc] init];
         self.downloadQueue.name = @"Download queue";
-        self.downloadQueue.maxConcurrentOperationCount = 5;
+        self.downloadQueue.maxConcurrentOperationCount = 1;
         
         self.filtrationQueue = [[NSOperationQueue alloc] init];
         self.filtrationQueue.name = @"Image Filtration queue";
-        self.filtrationQueue.maxConcurrentOperationCount = 2;
+        self.filtrationQueue.maxConcurrentOperationCount = 1;
         
         self.downloadsInProgress = [[NSMutableDictionary alloc] init];
         self.filtrationsInProgress = [[NSMutableDictionary alloc] init];

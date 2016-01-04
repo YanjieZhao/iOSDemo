@@ -5,3 +5,6 @@ inhibit_all_warnings!
 
 pod 'pop', '~> 1.0'
 pod 'FLEX', '~> 2.0', :configurations => ['Debug']
+pod 'SDWebImage', '~>3.7'
+pod 'FMDB', '~> 2.5'
+pod 'Mantle', '~> 1.5.4'

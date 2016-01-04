@@ -11,6 +11,8 @@
 #import "NetworkStatusViewController.h"
 #import "TouchViewController.h"
 #import "FileIOViewController.h"
+#import "RootViewController.h"
+#import "SDWebImageTableViewController.h"
 
 @interface ViewController ()
 
@@ -64,7 +66,18 @@
 
 - (IBAction)operationClick:(id)sender {
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"NSOperationStoryboard" bundle:nil];
-    UINavigationController *controller = [storyBoard instantiateViewControllerWithIdentifier:@"NSOperationNavigation"];
-    [self presentViewController:controller animated:YES completion:nil];
+    UIViewController *controller = [storyBoard instantiateViewControllerWithIdentifier:@"NSOperation"];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (IBAction)uinavigationClick:(id)sender {
+    RootViewController *controller = [[RootViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (IBAction)sdWebImageClick:(id)sender {
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"SDWebImageStoryboard" bundle:nil];
+    UIViewController *controller = [storyBoard instantiateViewControllerWithIdentifier:@"webimagecontroller"];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 @end

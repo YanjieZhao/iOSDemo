@@ -25,6 +25,9 @@
     
     [self fetchPhotoDetails];
 }
+-(void)viewDidDisappear:(BOOL)animated{
+    [self.photos removeAllObjects];
+}
 
 -(void)fetchPhotoDetails{
     NSURLRequest *request = [NSURLRequest requestWithURL:self.dataSourceURL];
@@ -68,26 +71,28 @@
         cell.accessoryView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     }
     
-    UIActivityIndicatorView* indicator = cell.accessoryView;
-    
+    //UIActivityIndicatorView* indicator = cell.accessoryView;
+    if ([self.photos count] == 0) {
+        return cell;
+    }
     
     PhotoRecord* photo = [self.photos objectAtIndex:indexPath.row];
 
     cell.textLabel.text = photo.name;
     cell.imageView.image = photo.image;
     
-    
+    NSLog(@"cell for table");
     switch (photo.state) {
         case Filtered:
-            [indicator stopAnimating];
+            //[indicator stopAnimating];
             break;
         case Failed:
-            [indicator stopAnimating];
+            //[indicator stopAnimating];
             cell.textLabel.text = @"Failed to load";
             break;
         case New:
         case Downloaded:
-            [indicator startAnimating];
+            //[indicator startAnimating];
             if (!tableView.dragging && !tableView.decelerating) {
                 [self startOperationsForPhotoRecord:photo indexPath:indexPath];
             }
@@ -105,8 +110,12 @@
         return;
     }
     ImageFiltration *filter = [[ImageFiltration alloc] init:photo];
+    __weak ImageFiltration* weakRefrence = filter;
     filter.completionBlock = ^{
-        if (filter.isCancelled) {
+        if ([self.photos count] == 0) {
+            return;
+        }
+        if (weakRefrence.isCancelled) {
             return;
         }
         dispatch_async(dispatch_get_main_queue(), ^{
@@ -125,8 +134,12 @@
     }
     
     ImageDownloader *downloader = [[ImageDownloader alloc] init:photo];
+    __weak ImageDownloader* weakRefrence = downloader;
     downloader.completionBlock = ^{
-        if (downloader.cancelled) {
+        if (weakRefrence.cancelled) {
+            return;
+        }
+        if ([self.photos count] == 0) {
             return;
         }
         dispatch_async(dispatch_get_main_queue(), ^{

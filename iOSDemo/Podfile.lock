@@ -1,13 +1,30 @@
 PODS:
   - FLEX (2.2.0)
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - Mantle (1.5.6):
+    - Mantle/extobjc (= 1.5.6)
+  - Mantle/extobjc (1.5.6)
   - pop (1.0.8)
+  - SDWebImage (3.7.3):
+    - SDWebImage/Core (= 3.7.3)
+  - SDWebImage/Core (3.7.3)
 
 DEPENDENCIES:
   - FLEX (~> 2.0)
+  - FMDB (~> 2.5)
+  - Mantle (~> 1.5.4)
   - pop (~> 1.0)
+  - SDWebImage (~> 3.7)
 
 SPEC CHECKSUMS:
   FLEX: bc8a4fb887ed5d3cdf7c2f3bd665f7bb1647cc58
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
+  Mantle: a197db93e0f1e36194b1fdbc078219a8492eaef2
   pop: bb773ae2c791ca2629de13b347e7a8b450fa6a57
+  SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
 
 COCOAPODS: 0.39.0

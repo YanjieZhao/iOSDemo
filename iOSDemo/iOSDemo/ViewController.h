@@ -15,5 +15,7 @@
 - (IBAction)touchClick:(id)sender;
 - (IBAction)fileIOClick:(id)sender;
 - (IBAction)operationClick:(id)sender;
+- (IBAction)uinavigationClick:(id)sender;
+- (IBAction)sdWebImageClick:(id)sender;
 @end
 
