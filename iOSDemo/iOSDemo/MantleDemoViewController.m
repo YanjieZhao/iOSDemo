@@ -9,6 +9,7 @@
 #import "MantleDemoViewController.h"
 #import "Response.h"
 #import "Mantle.h"
+#import "Data.h"
 
 
 @interface MantleDemoViewController ()
@@ -42,4 +43,16 @@
 }
 */
 
+- (IBAction)entryClick:(id)sender {
+    NSBundle *bundle = [NSBundle mainBundle];
+    //"/"很重要
+    NSString *path = [[bundle resourcePath] stringByAppendingString:@"/entry.json"];
+    NSLog(@"%@", path);
+    
+    NSData *data = [NSData dataWithContentsOfFile:path];
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+    
+    RootObject *response = [MTLJSONAdapter modelOfClass:[RootObject class] fromJSONDictionary:dict error:nil];
+    NSLog(@"%@", response);
+}
 @end

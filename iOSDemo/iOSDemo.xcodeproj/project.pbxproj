@@ -29,6 +29,8 @@
 		E64CB7FB1C3A58DC0073571B /* MantleDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E64CB7F91C3A58DC0073571B /* MantleDemoViewController.xib */; };
 		E64CB7FE1C3A5A780073571B /* Response.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CB7FD1C3A5A780073571B /* Response.m */; };
 		E64CB8011C3A5B360073571B /* Categray.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CB8001C3A5B360073571B /* Categray.m */; };
+		E64CB8231C3B6F1B0073571B /* entry.json in Resources */ = {isa = PBXBuildFile; fileRef = E64CB8221C3B6F1B0073571B /* entry.json */; };
+		E64CB8261C3B720C0073571B /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CB8251C3B720C0073571B /* Data.m */; };
 		E6712B6D1C3378EF00C705E5 /* SDWebImageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6712B6B1C3378EF00C705E5 /* SDWebImageTableViewController.m */; };
 		E6712B701C337CE800C705E5 /* SDWebImageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6712B6F1C337CE800C705E5 /* SDWebImageStoryboard.storyboard */; };
 		E6A03EC11C225CB1007B0222 /* InteractiveTransitionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A03EC01C225CB1007B0222 /* InteractiveTransitionStoryboard.storyboard */; };
@@ -94,6 +96,9 @@
 		E64CB7FD1C3A5A780073571B /* Response.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Response.m; sourceTree = "<group>"; };
 		E64CB7FF1C3A5B360073571B /* Categray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categray.h; sourceTree = "<group>"; };
 		E64CB8001C3A5B360073571B /* Categray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categray.m; sourceTree = "<group>"; };
+		E64CB8221C3B6F1B0073571B /* entry.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = entry.json; sourceTree = "<group>"; };
+		E64CB8241C3B720C0073571B /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		E64CB8251C3B720C0073571B /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
 		E6712B6A1C3378EF00C705E5 /* SDWebImageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageTableViewController.h; sourceTree = "<group>"; };
 		E6712B6B1C3378EF00C705E5 /* SDWebImageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageTableViewController.m; sourceTree = "<group>"; };
 		E6712B6F1C337CE800C705E5 /* SDWebImageStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SDWebImageStoryboard.storyboard; sourceTree = "<group>"; };
@@ -222,6 +227,8 @@
 				E64CB7FD1C3A5A780073571B /* Response.m */,
 				E64CB7FF1C3A5B360073571B /* Categray.h */,
 				E64CB8001C3A5B360073571B /* Categray.m */,
+				E64CB8241C3B720C0073571B /* Data.h */,
+				E64CB8251C3B720C0073571B /* Data.m */,
 			);
 			name = MantleDemo;
 			sourceTree = "<group>";
@@ -293,6 +300,7 @@
 		E6D2EB071C2234A700F46DF8 /* iOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E64CB8221C3B6F1B0073571B /* entry.json */,
 				E64CB7F61C3A58C10073571B /* MantleDemo */,
 				E64CB7F01C3A05190073571B /* FMDBDemo */,
 				E6712B641C3378A700C705E5 /* SDWebImage */,
@@ -414,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E63FCD0D1C327ED3008681E8 /* TheThirdViewController.xib in Resources */,
+				E64CB8231C3B6F1B0073571B /* entry.json in Resources */,
 				E6A03EDA1C22B318007B0222 /* NetworkStatusStoryboard.storyboard in Resources */,
 				E6D2EB181C2234A700F46DF8 /* LaunchScreen.storyboard in Resources */,
 				E63FCCA31C2A7D46008681E8 /* FileIOViewController.xib in Resources */,
@@ -500,6 +509,7 @@
 				E6A03ED51C226A02007B0222 /* CircleTransitionAnimator.m in Sources */,
 				E63FCCFD1C322D3F008681E8 /* ImageFiltration.m in Sources */,
 				E6D2EB0D1C2234A700F46DF8 /* AppDelegate.m in Sources */,
+				E64CB8261C3B720C0073571B /* Data.m in Sources */,
 				E63FCCF41C32223F008681E8 /* PhotoOperations.m in Sources */,
 				E64CB7FA1C3A58DC0073571B /* MantleDemoViewController.m in Sources */,
 				E63FCD071C327E17008681E8 /* TheSecondViewController.m in Sources */,

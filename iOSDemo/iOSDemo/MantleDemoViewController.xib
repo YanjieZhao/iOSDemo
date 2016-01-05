@@ -14,7 +14,20 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tx5-gH-McM">
+                    <rect key="frame" x="8" y="80" width="75" height="30"/>
+                    <state key="normal" title="阅读发现页"/>
+                    <connections>
+                        <action selector="entryClick:" destination="-1" eventType="touchUpInside" id="gR7-MN-G3w"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tx5-gH-McM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="TES-UH-nEN"/>
+                <constraint firstItem="tx5-gH-McM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="wsZ-fk-a4t"/>
+            </constraints>
         </view>
     </objects>
 </document>
