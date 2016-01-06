@@ -15,84 +15,77 @@
 @property (nonatomic, copy) NSString * name;
 @property (nonatomic, copy) NSString * url;
 @end
-#pragma mark - <#ViewController overrides#>
+
 @interface popwordsClass : MTLModel<MTLJSONSerializing>
 @property (nonatomic, copy) NSString * template;
 @property (nonatomic, copy) NSString * words;
 @end
+
 @interface searchClass : MTLModel<MTLJSONSerializing>
-@property (nonatomic, strong) NSArray * child;
+@property (nonatomic, strong) childListClass * child;
 @property (nonatomic, copy) NSString * name;
-@property (nonatomic, assign) id type;
-@property (nonatomic, assign) popwordsClass* popwords;
+@property (nonatomic, assign) NSNumber*  type;
+@property (nonatomic, strong) popwordsClass * popwords;
 @end
+
 @interface bannersListClass : MTLModel<MTLJSONSerializing>
 @property (nonatomic, copy) NSString * sTag;
 @property (nonatomic, copy) NSString * p_id;
-@property (nonatomic, assign) id p_action;
+@property (nonatomic, assign) NSNumber*  p_action;
 @property (nonatomic, copy) NSString * id;
 @property (nonatomic, copy) NSString * mode;
 @property (nonatomic, copy) NSString * title;
 @property (nonatomic, copy) NSString * cover;
-@property (nonatomic, assign) id msgId;
+@property (nonatomic, assign) NSNumber*  msgId;
 @property (nonatomic, copy) NSString * name;
 @property (nonatomic, copy) NSString * url;
+@property (nonatomic, copy) NSString * style;
+@property (nonatomic, copy) NSString * type;
 @end
 
 
 @interface barsListClass : MTLModel<MTLJSONSerializing>
-@property (nonatomic, copy) NSString * url;
-@property (nonatomic, assign) id msgId;
-@property (nonatomic, assign) id p_action;
+@property (nonatomic, assign) NSNumber*  msgId;
+@property (nonatomic, assign) NSNumber*  p_action;
 @property (nonatomic, copy) NSString * name;
 @property (nonatomic, copy) NSString * cover;
+@property (nonatomic, copy) NSString * url;
 @property (nonatomic, copy) NSString * p_id;
+@end
+
+@interface chainListClass : MTLModel<MTLJSONSerializing>
+@end
+
+@interface labelsListClass : MTLModel<MTLJSONSerializing>
 @end
 
 @interface bookClass : MTLModel<MTLJSONSerializing>
-@property (nonatomic, assign) id style;
+@property (nonatomic, assign) NSNumber*  style;
 @property (nonatomic, copy) NSString * title;
-@property (nonatomic, assign) id nwprice;
-@property (nonatomic, assign) id integrity;
-@property (nonatomic, assign) id reduce_begin;
+@property (nonatomic, assign) NSNumber*  nwprice;
+@property (nonatomic, assign) NSNumber*  integrity;
+@property (nonatomic, assign) NSNumber*  reduce_begin;
 @property (nonatomic, copy) NSString * category;
 @property (nonatomic, copy) NSString * cover;
 @property (nonatomic, copy) NSString * iap_id;
-@property (nonatomic, assign) id d_begin;
+@property (nonatomic, assign) NSNumber*  d_begin;
 @property (nonatomic, copy) NSString * id;
-@property (nonatomic, assign) id payment;
-@property (nonatomic, assign) id wprice;
-@property (nonatomic, assign) id d_end;
+@property (nonatomic, assign) NSNumber*  payment;
+@property (nonatomic, assign) NSNumber*  wprice;
+@property (nonatomic, assign) NSNumber*  d_end;
 @property (nonatomic, copy) NSString * sTag;
-@property (nonatomic, assign) id nprice;
-@property (nonatomic, assign) id reduce_end;
-@property (nonatomic, assign) id vip;
-@property (nonatomic, assign) id iap_price;
-@property (nonatomic, assign) id price;
-@property (nonatomic, assign) id p_action;
+@property (nonatomic, assign) NSNumber*  nprice;
+@property (nonatomic, assign) NSNumber*  reduce_end;
+@property (nonatomic, assign) NSNumber*  vip;
+@property (nonatomic, assign) NSNumber*  iap_price;
+@property (nonatomic, assign) NSNumber*  price;
+@property (nonatomic, assign) NSNumber*  p_action;
 @property (nonatomic, copy) NSString * author;
 @property (nonatomic, copy) NSString * content;
 @end
-@interface listListClass : MTLModel<MTLJSONSerializing>
-@property (nonatomic, strong) bookClass* book;
-@end
 
-@interface recommendsListClass : MTLModel<MTLJSONSerializing>
-@property (nonatomic, assign) id module;
-@property (nonatomic, assign) NSArray * labels;
-@property (nonatomic, assign) id p_action;
-@property (nonatomic, copy) NSString * more_name;
-@property (nonatomic, copy) NSString * p_id;
-@property (nonatomic, copy) NSString * sTag;
-@property (nonatomic, copy) NSString * more_url;
-@property (nonatomic, copy) NSArray * list;
-@property (nonatomic, copy) NSString * name;
-@property (nonatomic, copy) NSArray * bars;
-@property (nonatomic, copy) NSArray * chain;
-@property (nonatomic, copy) NSString * icon;
-@property (nonatomic, copy) NSArray * newsRecomList;
-@property (nonatomic, strong) NSArray * baoyue;
-@property (nonatomic, assign) NSArray * banners;
+@interface listListClass : MTLModel<MTLJSONSerializing>
+@property (nonatomic, strong) bookClass * book;
 @end
 
 @interface newsRecomListListClass : MTLModel<MTLJSONSerializing>
@@ -100,38 +93,57 @@
 @property (nonatomic, copy) NSString * id;
 @property (nonatomic, copy) NSString * pic;
 @property (nonatomic, copy) NSString * title;
-@property (nonatomic, assign) id head;
-@property (nonatomic, assign) id type;
+@property (nonatomic, assign) NSNumber*  head;
+@property (nonatomic, assign) NSNumber*  type;
 @property (nonatomic, copy) NSString * template;
 @property (nonatomic, copy) NSString * url;
 @end
+
 @interface bookListListClass : MTLModel<MTLJSONSerializing>
 @property (nonatomic, copy) NSString * author;
 @property (nonatomic, copy) NSString * content;
-@property (nonatomic, assign) id p_action;
+@property (nonatomic, assign) NSNumber*  p_action;
 @property (nonatomic, copy) NSString * id;
 @property (nonatomic, copy) NSString * sTag;
 @property (nonatomic, copy) NSString * title;
 @property (nonatomic, copy) NSString * cover;
 @end
+
 @interface baoyueListClass : MTLModel<MTLJSONSerializing>
 @property (nonatomic, copy) NSString * discount;
 @property (nonatomic, copy) NSString * id;
-@property (nonatomic, assign) id subscribed;
-@property (nonatomic, assign) NSArray * bookList;
-@property (nonatomic, assign) id count;
+@property (nonatomic, assign) NSNumber*  subscribed;
+@property (nonatomic, strong) bookListListClass * bookList;
+@property (nonatomic, assign) NSNumber*  count;
 @property (nonatomic, copy) NSString * title;
-@property (nonatomic, assign) id price;
+@property (nonatomic, assign) NSNumber*  price;
 @property (nonatomic, copy) NSString * summary;
 @property (nonatomic, copy) NSString * cover;
 @property (nonatomic, copy) NSString * sTag;
-@property (nonatomic, assign) id baoyueType;
-@property (nonatomic, assign) id totalValue;
-@property (nonatomic, assign) id p_action;
+@property (nonatomic, assign) NSNumber*  baoyueType;
+@property (nonatomic, assign) NSNumber*  totalValue;
+@property (nonatomic, assign) NSNumber*  p_action;
 @end
 
+@interface recommendsListClass : MTLModel<MTLJSONSerializing>
+@property (nonatomic, assign) NSNumber*  module;
+@property (nonatomic, strong) bannersListClass * banners;
+@property (nonatomic, copy) NSString * name;
+@property (nonatomic, strong) barsListClass * bars;
+@property (nonatomic, strong) chainListClass * chain;
+@property (nonatomic, copy) NSString * sTag;
+@property (nonatomic, assign) NSNumber*  p_action;
+@property (nonatomic, copy) NSString * p_id;
+@property (nonatomic, copy) NSString * more_name;
+@property (nonatomic, strong) labelsListClass * labels;
+@property (nonatomic, copy) NSString * more_url;
+@property (nonatomic, strong) listListClass * list;
+@property (nonatomic, copy) NSString * icon;
+@property (nonatomic, strong) newsRecomListListClass * newsRecomList;
+@property (nonatomic, strong) baoyueListClass * baoyue;
+@end
 @interface RootObject : MTLModel<MTLJSONSerializing>
 @property (nonatomic, copy) NSString * baseurl;
-@property (nonatomic, copy) searchClass* search;
-@property (nonatomic, copy) NSArray * recommends;
+@property (nonatomic, strong) searchClass * search;
+@property (nonatomic, strong) recommendsListClass * recommends;
 @end
