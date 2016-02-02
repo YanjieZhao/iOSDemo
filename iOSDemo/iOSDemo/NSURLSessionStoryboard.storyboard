@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--URL Session View Controller-->
+        <scene sceneID="wf0-ip-PIQ">
+            <objects>
+                <viewController storyboardIdentifier="URLSessionViewController" id="SBU-Rj-ceo" customClass="URLSessionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HvH-Wy-9Xp"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ac-lp-rvC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e8w-e5-PuS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRy-XW-Pqa">
+                                <rect key="frame" x="20" y="20" width="186" height="30"/>
+                                <state key="normal" title="NSURLSession With Cache"/>
+                                <connections>
+                                    <action selector="sessionCacheClick:" destination="SBU-Rj-ceo" eventType="touchUpInside" id="hDY-6b-86D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TRy-XW-Pqa" firstAttribute="top" secondItem="HvH-Wy-9Xp" secondAttribute="bottom" id="Z4h-ty-MfM"/>
+                            <constraint firstItem="TRy-XW-Pqa" firstAttribute="leading" secondItem="e8w-e5-PuS" secondAttribute="leading" constant="20" id="qae-5l-4DU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FPQ-wL-dMM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="527" y="413"/>
+        </scene>
+    </scenes>
+</document>

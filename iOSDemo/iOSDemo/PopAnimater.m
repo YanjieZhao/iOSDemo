@@ -30,7 +30,7 @@
     
     CGRect initialFrame = self.presenting ? self.originFrame : herbView.frame;
     CGRect finalFrame = self.presenting ? herbView.frame : self.originFrame;
-    
+    [toView snapshotViewAfterScreenUpdates:YES];
     float xScaleFactor = self.presenting ? initialFrame.size.width / finalFrame.size.width : finalFrame.size.width / initialFrame.size.width;
     float yScaleFactor = self.presenting ? initialFrame.size.height / finalFrame.size.height : finalFrame.size.height / initialFrame.size.height;
     

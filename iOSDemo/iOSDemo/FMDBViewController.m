@@ -70,12 +70,12 @@
 }
 - (IBAction)addClick:(id)sender {
     NSString *summary = @"在2013年3月21日苹果已经通知开发者，从2013年5月1日起，访问UIDID的应用将不再能通过审核，替代的方案是开发者应该使用“在iOS 6中介绍的Vendor或Advertising标示符。";
-    for (int i = 0; i < 10; ++i) {
+    for (int i = 0; i < 1; ++i) {
         summary = [summary stringByAppendingString:summary];
     }
     NSDate* startDate = [NSDate dateWithTimeIntervalSinceNow:0];
     [self.db beginTransaction];
-    for (int i = 0; i < 4000; i++) {
+    for (int i = 0; i < 40; i++) {
         NSString *sourceid = [self getUniqueStrByUUID];
         NSString *prexName = [NSString stringWithFormat:@"jack-%d", arc4random_uniform(1000000)];
         
@@ -114,10 +114,10 @@
 }
 
 - (IBAction)queryClick:(id)sender {
-    FMResultSet *resultSet = [self.db executeQuery:@"SELECT * FROM t_student"];
+    FMResultSet *resultSet = [self.db executeQuery:@"SELECT * FROM t_source"];
     //[self printStudentSet:resultSet];
     
-    resultSet = [self.db executeQuery:@"SELECT * FROM t_student WHERE name = 'jack-871'"];
+    //resultSet = [self.db executeQuery:@"SELECT * FROM t_student WHERE name = 'jack-871'"];
     [self printStudentSet:resultSet];
 }
 
@@ -150,7 +150,7 @@
         int ID = [resultSet intForColumn:@"id"];
         NSString *name = [resultSet stringForColumn:@"name"];
         NSString *sourceId = [resultSet stringForColumn:@"sourceId"];
-        //NSLog(@"%d %@ %@", ID, name, sourceId);
+        NSLog(@"%d %@ %@", ID, name, sourceId);
     }
 }
 @end

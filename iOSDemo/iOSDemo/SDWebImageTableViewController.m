@@ -24,7 +24,7 @@
         self.photos = [NSArray arrayWithArray:datasourceDictionary.allValues];
         
         dispatch_async(dispatch_get_main_queue(), ^{
-            
+            [[SDImageCache sharedImageCache] clearDisk];
             [self.tableView reloadData];
             [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
         });

@@ -87,6 +87,38 @@
                                     <action selector="mantleClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Of8-ki-rc7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8z-fT-GJy">
+                                <rect key="frame" x="20" y="264" width="90" height="30"/>
+                                <state key="normal" title="MyTableView"/>
+                                <connections>
+                                    <action selector="tableviewClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NSQ-iD-nxB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osJ-cM-nif">
+                                <rect key="frame" x="158" y="264" width="117" height="30"/>
+                                <state key="normal" title="StoryboardDemo"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jex-uA-yD5">
+                                <rect key="frame" x="20" y="302" width="115" height="30"/>
+                                <state key="normal" title="Navigation Trans"/>
+                                <connections>
+                                    <action selector="navigationTransClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I8a-2r-8RO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rq9-rK-nxz">
+                                <rect key="frame" x="158" y="302" width="123" height="30"/>
+                                <state key="normal" title="URLSessionDemo"/>
+                                <connections>
+                                    <action selector="urlSessionClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ppY-SX-ntA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82W-sd-Pd3">
+                                <rect key="frame" x="20" y="340" width="48" height="30"/>
+                                <state key="normal" title="WeiXin"/>
+                                <connections>
+                                    <action selector="weiXinClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gsU-ci-AGO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>

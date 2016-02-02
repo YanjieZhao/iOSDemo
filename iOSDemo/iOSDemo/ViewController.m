@@ -15,12 +15,23 @@
 #import "SDWebImageTableViewController.h"
 #import "FMDBViewController.h"
 #import "MantleDemoViewController.h"
+#import "MyTableViewController.h"
+#import "URLSessionViewController.h"
+#import "WeiXinDemoViewController.h"
 
 @interface ViewController ()
+- (IBAction)navigationTransClick:(id)sender;
+- (IBAction)urlSessionClick:(id)sender;
+- (IBAction)weiXinClick:(id)sender;
 
 @end
 
 @implementation ViewController
+- (IBAction)tableviewClick:(id)sender {
+    UIStoryboard *story = [UIStoryboard storyboardWithName:@"TableViewDemoStoryboard" bundle:nil];
+    MyTableViewController *controller = [story instantiateViewControllerWithIdentifier:@"MyTableViewController"];
+    [self.navigationController pushViewController:controller animated:YES];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -90,6 +101,20 @@
 
 - (IBAction)mantleClick:(id)sender {
     MantleDemoViewController *controller = [[MantleDemoViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+- (IBAction)navigationTransClick:(id)sender {
+    UIViewController *controller = [[UIStoryboard storyboardWithName:@"CustomNavBar" bundle:nil] instantiateViewControllerWithIdentifier:@"CustomNavBar"];
+    [self presentViewController:controller animated:YES completion:nil];
+}
+
+- (IBAction)urlSessionClick:(id)sender {
+    URLSessionViewController *controller = [[UIStoryboard storyboardWithName:@"NSURLSessionStoryboard" bundle:nil] instantiateViewControllerWithIdentifier:@"URLSessionViewController"];
+    [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (IBAction)weiXinClick:(id)sender {
+    WeiXinDemoViewController *controller = [[WeiXinDemoViewController alloc] init];
     [self.navigationController pushViewController:controller animated:YES];
 }
 @end
