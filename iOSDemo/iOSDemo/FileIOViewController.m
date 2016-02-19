@@ -42,7 +42,8 @@
 - (IBAction)handleEmbedFile:(id)sender {
     NSBundle *bundle = [NSBundle mainBundle];
     //"/"很重要
-    NSString *path = [[bundle resourcePath] stringByAppendingString:@"/ipad.jpg"];
+    NSString *path = [[bundle resourcePath]
+                      stringByAppendingString:@"/ipad.jpg"];
     NSLog(@"%@", path);
     
     NSData *data = [NSData dataWithContentsOfFile:path];
@@ -52,7 +53,8 @@
     
     //NSData *fileData = [NSData dataWithContentsOfFile:str];
     
-    NSString *writeFilePath = [[self documentPath] stringByAppendingPathComponent:@"ipad.jgp"];
+    NSString *writeFilePath = [[self documentPath]
+                               stringByAppendingPathComponent:@"ipad.jgp"];
     NSLog(@"%@", writeFilePath);
     
     [data writeToFile:writeFilePath atomically:YES];
@@ -62,19 +64,24 @@
 }
 
 - (IBAction)handleNSStyleFile:(id)sender {
-    NSString *path = [[self documentPath] stringByAppendingPathComponent:@"testFile"];
+    NSString *path = [[self documentPath]
+                      stringByAppendingPathComponent:@"testFile"];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     [fileManager createFileAtPath:path contents:nil attributes:nil];
     
     NSString *content = @"test data";
-    [content writeToFile:path atomically:YES encoding:NSUTF8StringEncoding error:nil];
+    [content writeToFile:path
+              atomically:YES
+                encoding:NSUTF8StringEncoding error:nil];
     
-    NSString *ressult = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    NSString *ressult = [NSString stringWithContentsOfFile:path
+                                                  encoding:NSUTF8StringEncoding error:nil];
     NSLog(@"%@", ressult);
     
     
     
-    NSDictionary *atts = [fileManager attributesOfItemAtPath:path error:nil];
+    NSDictionary *atts = [fileManager attributesOfItemAtPath:path
+                                                       error:nil];
 
     for (int i = 0; i < atts.count; ++i) {
         NSLog(@"%@-%@", [[atts allKeys] objectAtIndex:i], [[atts allValues] objectAtIndex:i]);
@@ -111,7 +118,8 @@
     NSMutableDictionary *content = [[NSMutableDictionary alloc] init];
     [content setObject:@"value" forKey:@"key"];
     
-    NSDictionary *dic = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"test key", nil] forKeys:[NSArray arrayWithObjects:@"test value", nil]];
+    NSDictionary *dic = [NSDictionary dictionaryWithObjects:[NSArray arrayWithObjects:@"test key", nil]
+                                                    forKeys:[NSArray arrayWithObjects:@"test value", nil]];
     [content setObject:dic forKey:@"dicKey"];
     
     NSString *path = [[self documentPath] stringByAppendingPathComponent:@"test.plist"];

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WXApi.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [WXApi registerApp:@"wxd930ea5d5a258f4f"];
+    self.weixinDelegate = [[WeiXinDelegate alloc] init];
     return YES;
 }
 
@@ -40,6 +43,15 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    return [WXApi handleOpenURL:url delegate:self.weixinDelegate];
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+    BOOL isSuc = [WXApi handleOpenURL:url delegate:self.weixinDelegate];
+    return isSuc;
 }
 
 @end
