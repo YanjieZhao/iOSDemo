@@ -84,17 +84,14 @@
 		E6D2EB271C2235EF00F46DF8 /* NavigationStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6D2EB261C2235EF00F46DF8 /* NavigationStoryboard.storyboard */; };
 		E6D2EB2A1C22367700F46DF8 /* PopAnimater.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D2EB291C22367700F46DF8 /* PopAnimater.m */; };
 		E6D2EB2D1C22371000F46DF8 /* PopTransitioningDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D2EB2C1C22371000F46DF8 /* PopTransitioningDelegate.m */; };
-<<<<<<< HEAD
-		FC29F08A1C5A3DA300F27B69 /* TouchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC29F0891C5A3DA300F27B69 /* TouchStoryboard.storyboard */; };
-		FC29F08D1C5A3E6C00F27B69 /* TouchMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC29F08C1C5A3E6C00F27B69 /* TouchMainViewController.m */; };
-=======
 		E6F126AF1C4898F800154B8D /* TableViewDemoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F126AE1C4898F800154B8D /* TableViewDemoStoryboard.storyboard */; };
 		E6F126B21C48992600154B8D /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F126B11C48992600154B8D /* MyTableViewController.m */; };
 		E6F126B61C489EAF00154B8D /* CustomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F126B41C489EAF00154B8D /* CustomTableViewCell.m */; };
 		E6F126B71C489EAF00154B8D /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F126B51C489EAF00154B8D /* CustomTableViewCell.xib */; };
 		E6F126BC1C4CD03100154B8D /* StoryboardDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F126BB1C4CD03100154B8D /* StoryboardDemo.storyboard */; };
 		E6F126BF1C4CD07A00154B8D /* StoryBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F126BE1C4CD07A00154B8D /* StoryBoardViewController.m */; };
->>>>>>> origin/master
+		FC29F08A1C5A3DA300F27B69 /* TouchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC29F0891C5A3DA300F27B69 /* TouchStoryboard.storyboard */; };
+		FC29F08D1C5A3E6C00F27B69 /* TouchMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC29F08C1C5A3E6C00F27B69 /* TouchMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -228,11 +225,6 @@
 		E6D2EB291C22367700F46DF8 /* PopAnimater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopAnimater.m; sourceTree = "<group>"; };
 		E6D2EB2B1C22371000F46DF8 /* PopTransitioningDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopTransitioningDelegate.h; sourceTree = "<group>"; };
 		E6D2EB2C1C22371000F46DF8 /* PopTransitioningDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopTransitioningDelegate.m; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		FC29F0891C5A3DA300F27B69 /* TouchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TouchStoryboard.storyboard; sourceTree = "<group>"; };
-		FC29F08B1C5A3E6C00F27B69 /* TouchMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchMainViewController.h; sourceTree = "<group>"; };
-		FC29F08C1C5A3E6C00F27B69 /* TouchMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchMainViewController.m; sourceTree = "<group>"; };
-=======
 		E6F126AE1C4898F800154B8D /* TableViewDemoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TableViewDemoStoryboard.storyboard; sourceTree = "<group>"; };
 		E6F126B01C48992600154B8D /* MyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTableViewController.h; sourceTree = "<group>"; };
 		E6F126B11C48992600154B8D /* MyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTableViewController.m; sourceTree = "<group>"; };
@@ -242,7 +234,9 @@
 		E6F126BB1C4CD03100154B8D /* StoryboardDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardDemo.storyboard; sourceTree = "<group>"; };
 		E6F126BD1C4CD07A00154B8D /* StoryBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryBoardViewController.h; sourceTree = "<group>"; };
 		E6F126BE1C4CD07A00154B8D /* StoryBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryBoardViewController.m; sourceTree = "<group>"; };
->>>>>>> origin/master
+		FC29F0891C5A3DA300F27B69 /* TouchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TouchStoryboard.storyboard; sourceTree = "<group>"; };
+		FC29F08B1C5A3E6C00F27B69 /* TouchMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchMainViewController.h; sourceTree = "<group>"; };
+		FC29F08C1C5A3E6C00F27B69 /* TouchMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
