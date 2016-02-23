@@ -7,9 +7,12 @@
 //
 
 #import "WeiXinDemoViewController.h"
+#import "Mantle.h"
+#import "AppDelegate.h"
 
 @interface WeiXinDemoViewController ()
 - (IBAction)textShareClick:(id)sender;
+- (IBAction)loginClick:(id)sender;
 
 @end
 
@@ -41,5 +44,15 @@
     req.bText = YES;
     req.scene = WXSceneSession;
     [WXApi sendReq:req];
+}
+
+- (IBAction)loginClick:(id)sender {
+    SendAuthReq *req = [[SendAuthReq alloc] init];
+    req.scope = @"snsapi_userinfo";
+    req.state = @"123";
+    [WXApi sendReq:req];
+    
+    NSString *token = ((AppDelegate *)[[UIApplication sharedApplication] delegate]).weixinDelegate.token;
+    NSLog(@"token %@", token);
 }
 @end

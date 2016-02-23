@@ -12,6 +12,10 @@
 @property (nonatomic, assign) BOOL interactionInProgress;
 @property (nonatomic, assign) BOOL shouldCompleteTransition;
 @property (nonatomic, weak) UIViewController *viewController;
-
+/**
+ *  <#Description#>
+ *
+ *  @param viewController <#viewController description#>
+ */
 - (void)wireToViewController:(UIViewController *)viewController;
 @end

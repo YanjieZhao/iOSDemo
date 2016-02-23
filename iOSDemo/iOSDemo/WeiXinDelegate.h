@@ -10,5 +10,5 @@
 #import "WXApi.h"
 
 @interface WeiXinDelegate : NSObject<WXApiDelegate>
-
+@property (nonatomic, copy) NSString *token;
 @end

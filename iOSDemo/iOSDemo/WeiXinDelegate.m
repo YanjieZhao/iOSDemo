@@ -58,5 +58,12 @@
         [alert show];
         //[alert release];
     }
+    if ([resp isKindOfClass:[SendAuthResp class]]) {
+        NSLog(@"resp %@", resp);
+        NSString *code = ((SendAuthResp *)resp).code;
+        NSString *urlStr = [NSString stringWithFormat:@"https://api.weixin.qq.com/sns/oauth2/access_token?appid=%@&secret=SECRET&code=%@&grant_type=authorization_code", @"wxd930ea5d5a258f4f", code];
+        NSString *tokenStr = [NSString stringWithContentsOfURL:[NSURL URLWithString:urlStr] encoding:NSUTF8StringEncoding error:nil];
+        NSLog(@"tokenStr %@", tokenStr);
+    }
 }
 @end

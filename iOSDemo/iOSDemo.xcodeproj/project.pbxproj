@@ -38,6 +38,7 @@
 		E65413661C609D49001822AF /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E65413651C609D49001822AF /* libsqlite3.0.tbd */; };
 		E65413681C609D57001822AF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65413671C609D57001822AF /* SystemConfiguration.framework */; };
 		E654136A1C609D86001822AF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E65413691C609D86001822AF /* libz.tbd */; };
+		E654136D1C61D4F6001822AF /* WXResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E654136C1C61D4F6001822AF /* WXResult.m */; };
 		E664F16F1C5853F6008FB5CF /* NSURLSessionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E664F16E1C5853F6008FB5CF /* NSURLSessionStoryboard.storyboard */; };
 		E664F1721C585412008FB5CF /* URLSessionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E664F1711C585412008FB5CF /* URLSessionViewController.m */; };
 		E664F1751C58544D008FB5CF /* URLSessionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E664F1741C58544D008FB5CF /* URLSessionDelegate.m */; };
@@ -146,6 +147,8 @@
 		E65413651C609D49001822AF /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		E65413671C609D57001822AF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E65413691C609D86001822AF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E654136B1C61D4F6001822AF /* WXResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXResult.h; sourceTree = "<group>"; };
+		E654136C1C61D4F6001822AF /* WXResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXResult.m; sourceTree = "<group>"; };
 		E664F16E1C5853F6008FB5CF /* NSURLSessionStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NSURLSessionStoryboard.storyboard; sourceTree = "<group>"; };
 		E664F1701C585412008FB5CF /* URLSessionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLSessionViewController.h; sourceTree = "<group>"; };
 		E664F1711C585412008FB5CF /* URLSessionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLSessionViewController.m; sourceTree = "<group>"; };
@@ -387,6 +390,8 @@
 				E654135C1C6084D9001822AF /* WeiXinDemoViewController.xib */,
 				E654135F1C60854B001822AF /* WeiXinDelegate.h */,
 				E65413601C60854B001822AF /* WeiXinDelegate.m */,
+				E654136B1C61D4F6001822AF /* WXResult.h */,
+				E654136C1C61D4F6001822AF /* WXResult.m */,
 			);
 			name = WeiXinDemo;
 			sourceTree = "<group>";
@@ -759,6 +764,7 @@
 				E664F1AE1C5B405D008FB5CF /* AnnotatedPhotoCell.m in Sources */,
 				E64CB7FA1C3A58DC0073571B /* MantleDemoViewController.m in Sources */,
 				E63FCD071C327E17008681E8 /* TheSecondViewController.m in Sources */,
+				E654136D1C61D4F6001822AF /* WXResult.m in Sources */,
 				E64CB7FE1C3A5A780073571B /* Response.m in Sources */,
 				E6D2EB2D1C22371000F46DF8 /* PopTransitioningDelegate.m in Sources */,
 				E664F1B51C5B4D32008FB5CF /* PinterestLayout.m in Sources */,
