@@ -91,6 +91,8 @@
 		E6F126B71C489EAF00154B8D /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6F126B51C489EAF00154B8D /* CustomTableViewCell.xib */; };
 		E6F126BC1C4CD03100154B8D /* StoryboardDemo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6F126BB1C4CD03100154B8D /* StoryboardDemo.storyboard */; };
 		E6F126BF1C4CD07A00154B8D /* StoryBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F126BE1C4CD07A00154B8D /* StoryBoardViewController.m */; };
+		FC29F08A1C5A3DA300F27B69 /* TouchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC29F0891C5A3DA300F27B69 /* TouchStoryboard.storyboard */; };
+		FC29F08D1C5A3E6C00F27B69 /* TouchMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC29F08C1C5A3E6C00F27B69 /* TouchMainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -235,6 +237,9 @@
 		E6F126BB1C4CD03100154B8D /* StoryboardDemo.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardDemo.storyboard; sourceTree = "<group>"; };
 		E6F126BD1C4CD07A00154B8D /* StoryBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryBoardViewController.h; sourceTree = "<group>"; };
 		E6F126BE1C4CD07A00154B8D /* StoryBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryBoardViewController.m; sourceTree = "<group>"; };
+		FC29F0891C5A3DA300F27B69 /* TouchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TouchStoryboard.storyboard; sourceTree = "<group>"; };
+		FC29F08B1C5A3E6C00F27B69 /* TouchMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchMainViewController.h; sourceTree = "<group>"; };
+		FC29F08C1C5A3E6C00F27B69 /* TouchMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchMainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -471,6 +476,9 @@
 				E6A03EDF1C23A722007B0222 /* TouchViewController.h */,
 				E6A03EE01C23A722007B0222 /* TouchViewController.m */,
 				E6A03EE11C23A722007B0222 /* TouchViewController.xib */,
+				FC29F0891C5A3DA300F27B69 /* TouchStoryboard.storyboard */,
+				FC29F08B1C5A3E6C00F27B69 /* TouchMainViewController.h */,
+				FC29F08C1C5A3E6C00F27B69 /* TouchMainViewController.m */,
 			);
 			name = 3DTouch;
 			sourceTree = "<group>";
@@ -653,6 +661,7 @@
 				E6A03EDA1C22B318007B0222 /* NetworkStatusStoryboard.storyboard in Resources */,
 				E6D2EB181C2234A700F46DF8 /* LaunchScreen.storyboard in Resources */,
 				E63FCCA31C2A7D46008681E8 /* FileIOViewController.xib in Resources */,
+				FC29F08A1C5A3DA300F27B69 /* TouchStoryboard.storyboard in Resources */,
 				E6A03ECE1C22655D007B0222 /* ipad.jpg in Resources */,
 				E664F16F1C5853F6008FB5CF /* NSURLSessionStoryboard.storyboard in Resources */,
 				E63FCD031C327DCD008681E8 /* RootViewController.xib in Resources */,
@@ -779,6 +788,7 @@
 				E68F74D11C4F381B0022B539 /* FlipDismissAnimationController.m in Sources */,
 				E6A03EC71C225F15007B0222 /* InteractiveNavigationController.m in Sources */,
 				E63FCD0C1C327ED3008681E8 /* TheThirdViewController.m in Sources */,
+				FC29F08D1C5A3E6C00F27B69 /* TouchMainViewController.m in Sources */,
 				E6D2EB0A1C2234A700F46DF8 /* main.m in Sources */,
 				E6D2EB221C2235CE00F46DF8 /* FirstViewController.m in Sources */,
 				E63FCCF11C31642C008681E8 /* ListTableViewController.m in Sources */,
