@@ -44,7 +44,6 @@
     
     
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -163,7 +162,7 @@ UIImageView *imageView1;
             }];
         });
     });
-    
+}
 
 - (IBAction)keyboardDemoClick:(id)sender {
     KeyboardDemoViewController *controller = [[KeyboardDemoViewController alloc] init];
