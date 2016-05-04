@@ -141,6 +141,8 @@
             }
         }
         return temp;
+        childListClass *c = [[childListClass alloc] init];
+        [c setUrl:@""];
     }];
 }
 +(NSValueTransformer *)labelsJSONTransformer

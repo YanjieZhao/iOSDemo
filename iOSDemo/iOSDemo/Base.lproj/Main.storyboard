@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CWY-vX-5Us">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CWY-vX-5Us">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--iOS Demo-->
@@ -117,6 +117,13 @@
                                 <state key="normal" title="WeiXin"/>
                                 <connections>
                                     <action selector="weiXinClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gsU-ci-AGO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csn-Xh-vvX">
+                                <rect key="frame" x="158" y="340" width="106" height="30"/>
+                                <state key="normal" title="KeyboardDemo"/>
+                                <connections>
+                                    <action selector="keyboardDemoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UWC-D4-lfV"/>
                                 </connections>
                             </button>
                         </subviews>

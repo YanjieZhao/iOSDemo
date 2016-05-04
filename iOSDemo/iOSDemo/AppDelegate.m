@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "WXApi.h"
+#import "SetGetDemo.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,13 @@
     // Override point for customization after application launch.
     [WXApi registerApp:@"wxd930ea5d5a258f4f"];
     self.weixinDelegate = [[WeiXinDelegate alloc] init];
+    
+    SetGetDemo *sgd = [[SetGetDemo alloc] init];
+    //[sgd setSex:22];
+    NSLog(@"%d", [sgd getGender]);
+    sgd.x = 12;
+    NSLog(@"%d", sgd.x);
+    
     return YES;
 }
 
