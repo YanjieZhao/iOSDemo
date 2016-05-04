@@ -13,9 +13,9 @@
 @property (nonatomic, assign) BOOL shouldCompleteTransition;
 @property (nonatomic, weak) UIViewController *viewController;
 /**
- *  <#Description#>
+ *  wireToViewController
  *
- *  @param viewController <#viewController description#>
+ *  @param viewController wireToViewController
  */
 - (void)wireToViewController:(UIViewController *)viewController;
 @end

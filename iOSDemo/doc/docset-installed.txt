@@ -1,0 +1,4 @@
+Documentation set was installed to Xcode!
+
+Path: /Users/netease/Library/Developer/Shared/Documentation/DocSets/com.netease.iosdemo.iOSDemo.docset
+Time: 2016-03-03 07:55:06 +0000

@@ -23,6 +23,7 @@
 - (IBAction)navigationTransClick:(id)sender;
 - (IBAction)urlSessionClick:(id)sender;
 - (IBAction)weiXinClick:(id)sender;
+- (IBAction)animationClick:(id)sender;
 
 @end
 
@@ -116,5 +117,50 @@
 - (IBAction)weiXinClick:(id)sender {
     WeiXinDemoViewController *controller = [[WeiXinDemoViewController alloc] init];
     [self.navigationController pushViewController:controller animated:YES];
+}
+UIImageView *imageView1;
+- (IBAction)animationClick:(id)sender {
+    if (imageView1 != nil) {
+        [imageView1 removeFromSuperview];
+    }
+    UIImage *image = [UIImage imageNamed:@"01"];
+    imageView1 = [[UIImageView alloc] initWithImage:image];
+    
+    CGRect frame = CGRectMake(50, 100, 200, 250);
+    imageView1.frame = frame;
+    
+    UIImage *image2 = [UIImage imageNamed:@"02"];
+    UIImageView *imageView2 = [[UIImageView alloc] initWithImage:image];
+    imageView2.frame = frame;
+    
+    [self.view addSubview:imageView1];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        sleep(2);
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [UIView transitionWithView:imageView1 duration:2.0 options:UIViewAnimationOptionTransitionFlipFromLeft animations:^{ /**  执行左翻转动画，*/
+                // 从左边翻转 ， 之前设置显示图片1，翻转后显示图2 -》图片1 左翻转到最后显示图片2
+                
+                
+                imageView1.image = [UIImage imageNamed:@"02"];
+                
+            } completion:^(BOOL finished) {
+                
+//                NSLog(@"completion");
+//                
+//                /** 左翻转动画 结束后， 停 1 秒后，再执行 右翻转动画 */
+//                
+//                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{ // 停 1 秒后，再执行 右翻转动画
+//                    
+//                    [UIView transitionWithView:imageView1 duration:1.0 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{ // 然后，从右边翻转，翻转时显示图片1 -》图片2 右翻转最后显示图片1
+//                        
+//                        imageView1.image = [UIImage imageNamed:@"01"];
+//                        
+//                    } completion:nil];
+//                    
+//                });
+            }];
+        });
+    });
+    
 }
 @end

@@ -50,6 +50,12 @@
 		E664F1AE1C5B405D008FB5CF /* AnnotatedPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E664F1AD1C5B405D008FB5CF /* AnnotatedPhotoCell.m */; };
 		E664F1B21C5B42ED008FB5CF /* RoundedCornersView.m in Sources */ = {isa = PBXBuildFile; fileRef = E664F1B11C5B42ED008FB5CF /* RoundedCornersView.m */; };
 		E664F1B51C5B4D32008FB5CF /* PinterestLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E664F1B41C5B4D32008FB5CF /* PinterestLayout.m */; };
+		E669DD411CC4E6ED001CB2DD /* ConstraintsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E669DD401CC4E6ED001CB2DD /* ConstraintsViewController.m */; };
+		E669DD431CC4E6FF001CB2DD /* ConstraintsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E669DD421CC4E6FF001CB2DD /* ConstraintsStoryboard.storyboard */; };
+		E669DD461CC4E77D001CB2DD /* ConstraintsDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E669DD451CC4E77D001CB2DD /* ConstraintsDemoView.m */; };
+		E669DD511CC5BB15001CB2DD /* CustomViewDemoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E669DD501CC5BB15001CB2DD /* CustomViewDemoStoryboard.storyboard */; };
+		E669DD541CC5BB23001CB2DD /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = E669DD531CC5BB23001CB2DD /* CustomView.m */; };
+		E669DD561CC5BB66001CB2DD /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E669DD551CC5BB66001CB2DD /* CustomView.xib */; };
 		E6712B6D1C3378EF00C705E5 /* SDWebImageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6712B6B1C3378EF00C705E5 /* SDWebImageTableViewController.m */; };
 		E6712B701C337CE800C705E5 /* SDWebImageStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6712B6F1C337CE800C705E5 /* SDWebImageStoryboard.storyboard */; };
 		E68F74CB1C4F349C0022B539 /* NavigationTrasitionStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E68F74CA1C4F349C0022B539 /* NavigationTrasitionStoryboard.storyboard */; };
@@ -170,6 +176,15 @@
 		E664F1B11C5B42ED008FB5CF /* RoundedCornersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundedCornersView.m; sourceTree = "<group>"; };
 		E664F1B31C5B4D32008FB5CF /* PinterestLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinterestLayout.h; sourceTree = "<group>"; };
 		E664F1B41C5B4D32008FB5CF /* PinterestLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinterestLayout.m; sourceTree = "<group>"; };
+		E669DD3F1CC4E6ED001CB2DD /* ConstraintsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstraintsViewController.h; sourceTree = "<group>"; };
+		E669DD401CC4E6ED001CB2DD /* ConstraintsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstraintsViewController.m; sourceTree = "<group>"; };
+		E669DD421CC4E6FF001CB2DD /* ConstraintsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ConstraintsStoryboard.storyboard; sourceTree = "<group>"; };
+		E669DD441CC4E77D001CB2DD /* ConstraintsDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstraintsDemoView.h; sourceTree = "<group>"; };
+		E669DD451CC4E77D001CB2DD /* ConstraintsDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstraintsDemoView.m; sourceTree = "<group>"; };
+		E669DD501CC5BB15001CB2DD /* CustomViewDemoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomViewDemoStoryboard.storyboard; sourceTree = "<group>"; };
+		E669DD521CC5BB23001CB2DD /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		E669DD531CC5BB23001CB2DD /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
+		E669DD551CC5BB66001CB2DD /* CustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
 		E6712B6A1C3378EF00C705E5 /* SDWebImageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageTableViewController.h; sourceTree = "<group>"; };
 		E6712B6B1C3378EF00C705E5 /* SDWebImageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageTableViewController.m; sourceTree = "<group>"; };
 		E6712B6F1C337CE800C705E5 /* SDWebImageStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SDWebImageStoryboard.storyboard; sourceTree = "<group>"; };
@@ -434,6 +449,29 @@
 			name = CollectionView;
 			sourceTree = "<group>";
 		};
+		E669DD3E1CC4E6BA001CB2DD /* Contrainst */ = {
+			isa = PBXGroup;
+			children = (
+				E669DD3F1CC4E6ED001CB2DD /* ConstraintsViewController.h */,
+				E669DD401CC4E6ED001CB2DD /* ConstraintsViewController.m */,
+				E669DD421CC4E6FF001CB2DD /* ConstraintsStoryboard.storyboard */,
+				E669DD441CC4E77D001CB2DD /* ConstraintsDemoView.h */,
+				E669DD451CC4E77D001CB2DD /* ConstraintsDemoView.m */,
+			);
+			path = Contrainst;
+			sourceTree = "<group>";
+		};
+		E669DD4F1CC5BB02001CB2DD /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				E669DD501CC5BB15001CB2DD /* CustomViewDemoStoryboard.storyboard */,
+				E669DD521CC5BB23001CB2DD /* CustomView.h */,
+				E669DD531CC5BB23001CB2DD /* CustomView.m */,
+				E669DD551CC5BB66001CB2DD /* CustomView.xib */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		E6712B641C3378A700C705E5 /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -505,6 +543,8 @@
 		E6D2EB071C2234A700F46DF8 /* iOSDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E669DD4F1CC5BB02001CB2DD /* CustomView */,
+				E669DD3E1CC4E6BA001CB2DD /* Contrainst */,
 				E65413591C6084B5001822AF /* WeiXinDemo */,
 				E664F19E1C5B395B008FB5CF /* CollectionView */,
 				E664F16D1C5853D8008FB5CF /* NSURLSessionDemo */,
@@ -669,12 +709,15 @@
 				E6F126B71C489EAF00154B8D /* CustomTableViewCell.xib in Resources */,
 				E63FCCEE1C31622A008681E8 /* NSOperationStoryboard.storyboard in Resources */,
 				E68F74DF1C4F6C800022B539 /* CustomNavBar.storyboard in Resources */,
+				E669DD511CC5BB15001CB2DD /* CustomViewDemoStoryboard.storyboard in Resources */,
 				E664F1A01C5B3A4D008FB5CF /* Photos.plist in Resources */,
 				E6A03EE31C23A722007B0222 /* TouchViewController.xib in Resources */,
 				E6A03EC11C225CB1007B0222 /* InteractiveTransitionStoryboard.storyboard in Resources */,
 				E6D2EB151C2234A700F46DF8 /* Assets.xcassets in Resources */,
 				E6712B701C337CE800C705E5 /* SDWebImageStoryboard.storyboard in Resources */,
 				E6A03ECF1C22655D007B0222 /* iphone.jpg in Resources */,
+				E669DD561CC5BB66001CB2DD /* CustomView.xib in Resources */,
+				E669DD431CC4E6FF001CB2DD /* ConstraintsStoryboard.storyboard in Resources */,
 				E6F126AF1C4898F800154B8D /* TableViewDemoStoryboard.storyboard in Resources */,
 				E664F1A21C5B3A82008FB5CF /* CollectionStoryboard.storyboard in Resources */,
 				E654135E1C6084D9001822AF /* WeiXinDemoViewController.xib in Resources */,
@@ -759,14 +802,17 @@
 				E654135D1C6084D9001822AF /* WeiXinDemoViewController.m in Sources */,
 				E68F74E21C4F6D430022B539 /* CNBFViewController.m in Sources */,
 				E68F74DA1C4F38B70022B539 /* SwipeInteractionController.m in Sources */,
+				E669DD461CC4E77D001CB2DD /* ConstraintsDemoView.m in Sources */,
 				E664F1A51C5B3AFC008FB5CF /* PhotoStreamViewController.m in Sources */,
 				E6A03EE21C23A722007B0222 /* TouchViewController.m in Sources */,
 				E6A03ED51C226A02007B0222 /* CircleTransitionAnimator.m in Sources */,
 				E68F74CE1C4F379F0022B539 /* AnimationHelper.m in Sources */,
 				E63FCCFD1C322D3F008681E8 /* ImageFiltration.m in Sources */,
+				E669DD541CC5BB23001CB2DD /* CustomView.m in Sources */,
 				E6D2EB0D1C2234A700F46DF8 /* AppDelegate.m in Sources */,
 				E64CB8261C3B720C0073571B /* Data.m in Sources */,
 				E664F1AB1C5B3ED2008FB5CF /* UIImage+Decompression.m in Sources */,
+				E669DD411CC4E6ED001CB2DD /* ConstraintsViewController.m in Sources */,
 				E664F1721C585412008FB5CF /* URLSessionViewController.m in Sources */,
 				E68F74DD1C4F3F710022B539 /* FlipPresentAnimationController.m in Sources */,
 				E63FCCF41C32223F008681E8 /* PhotoOperations.m in Sources */,
