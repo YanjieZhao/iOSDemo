@@ -18,11 +18,13 @@
 #import "MyTableViewController.h"
 #import "URLSessionViewController.h"
 #import "WeiXinDemoViewController.h"
+#import "KeyboardDemoViewController.h"
 
 @interface ViewController ()
 - (IBAction)navigationTransClick:(id)sender;
 - (IBAction)urlSessionClick:(id)sender;
 - (IBAction)weiXinClick:(id)sender;
+- (IBAction)keyboardDemoClick:(id)sender;
 - (IBAction)animationClick:(id)sender;
 
 @end
@@ -162,5 +164,9 @@ UIImageView *imageView1;
         });
     });
     
+
+- (IBAction)keyboardDemoClick:(id)sender {
+    KeyboardDemoViewController *controller = [[KeyboardDemoViewController alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 @end

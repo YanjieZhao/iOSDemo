@@ -99,6 +99,12 @@
 		E6F126BF1C4CD07A00154B8D /* StoryBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6F126BE1C4CD07A00154B8D /* StoryBoardViewController.m */; };
 		FC29F08A1C5A3DA300F27B69 /* TouchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC29F0891C5A3DA300F27B69 /* TouchStoryboard.storyboard */; };
 		FC29F08D1C5A3E6C00F27B69 /* TouchMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC29F08C1C5A3E6C00F27B69 /* TouchMainViewController.m */; };
+		FC8B1DF01CD4B432009AA72D /* PopDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8B1DEF1CD4B432009AA72D /* PopDemoViewController.m */; };
+		FC8B1DF21CD4B449009AA72D /* PopStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8B1DF11CD4B449009AA72D /* PopStoryboard.storyboard */; };
+		FC8B1DF41CD4C368009AA72D /* MenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC8B1DF31CD4C368009AA72D /* MenuView.xib */; };
+		FCA921A31CA15160001FAEF0 /* SetGetDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = FCA921A21CA15160001FAEF0 /* SetGetDemo.m */; };
+		FCE174FC1CAD22AC00F2C901 /* KeyboardDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCE174FA1CAD22AC00F2C901 /* KeyboardDemoViewController.m */; };
+		FCE174FD1CAD22AC00F2C901 /* KeyboardDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCE174FB1CAD22AC00F2C901 /* KeyboardDemoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -255,6 +261,15 @@
 		FC29F0891C5A3DA300F27B69 /* TouchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TouchStoryboard.storyboard; sourceTree = "<group>"; };
 		FC29F08B1C5A3E6C00F27B69 /* TouchMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchMainViewController.h; sourceTree = "<group>"; };
 		FC29F08C1C5A3E6C00F27B69 /* TouchMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TouchMainViewController.m; sourceTree = "<group>"; };
+		FC8B1DEE1CD4B432009AA72D /* PopDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopDemoViewController.h; sourceTree = "<group>"; };
+		FC8B1DEF1CD4B432009AA72D /* PopDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopDemoViewController.m; sourceTree = "<group>"; };
+		FC8B1DF11CD4B449009AA72D /* PopStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PopStoryboard.storyboard; sourceTree = "<group>"; };
+		FC8B1DF31CD4C368009AA72D /* MenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuView.xib; sourceTree = "<group>"; };
+		FCA921A11CA15160001FAEF0 /* SetGetDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetGetDemo.h; sourceTree = "<group>"; };
+		FCA921A21CA15160001FAEF0 /* SetGetDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetGetDemo.m; sourceTree = "<group>"; };
+		FCE174F91CAD22AC00F2C901 /* KeyboardDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardDemoViewController.h; sourceTree = "<group>"; };
+		FCE174FA1CAD22AC00F2C901 /* KeyboardDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardDemoViewController.m; sourceTree = "<group>"; };
+		FCE174FB1CAD22AC00F2C901 /* KeyboardDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardDemoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +305,7 @@
 		E6095F501C46813300DE17DE /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				FC8B1DED1CD4B410009AA72D /* Pop */,
 				E6095F511C46814300DE17DE /* Transitions */,
 			);
 			name = Animations;
@@ -545,6 +561,8 @@
 			children = (
 				E669DD4F1CC5BB02001CB2DD /* CustomView */,
 				E669DD3E1CC4E6BA001CB2DD /* Contrainst */,
+				FCE174F81CAD229C00F2C901 /* KeyBoardDemo */,
+				FCA921A01CA1514B001FAEF0 /* OCDemo */,
 				E65413591C6084B5001822AF /* WeiXinDemo */,
 				E664F19E1C5B395B008FB5CF /* CollectionView */,
 				E664F16D1C5853D8008FB5CF /* NSURLSessionDemo */,
@@ -634,6 +652,36 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FC8B1DED1CD4B410009AA72D /* Pop */ = {
+			isa = PBXGroup;
+			children = (
+				FC8B1DEE1CD4B432009AA72D /* PopDemoViewController.h */,
+				FC8B1DEF1CD4B432009AA72D /* PopDemoViewController.m */,
+				FC8B1DF11CD4B449009AA72D /* PopStoryboard.storyboard */,
+				FC8B1DF31CD4C368009AA72D /* MenuView.xib */,
+			);
+			path = Pop;
+			sourceTree = "<group>";
+		};
+		FCA921A01CA1514B001FAEF0 /* OCDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FCA921A11CA15160001FAEF0 /* SetGetDemo.h */,
+				FCA921A21CA15160001FAEF0 /* SetGetDemo.m */,
+			);
+			name = OCDemo;
+			sourceTree = "<group>";
+		};
+		FCE174F81CAD229C00F2C901 /* KeyBoardDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FCE174F91CAD22AC00F2C901 /* KeyboardDemoViewController.h */,
+				FCE174FA1CAD22AC00F2C901 /* KeyboardDemoViewController.m */,
+				FCE174FB1CAD22AC00F2C901 /* KeyboardDemoViewController.xib */,
+			);
+			path = KeyBoardDemo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -708,12 +756,14 @@
 				E64CB7FB1C3A58DC0073571B /* MantleDemoViewController.xib in Resources */,
 				E6F126B71C489EAF00154B8D /* CustomTableViewCell.xib in Resources */,
 				E63FCCEE1C31622A008681E8 /* NSOperationStoryboard.storyboard in Resources */,
+				FC8B1DF41CD4C368009AA72D /* MenuView.xib in Resources */,
 				E68F74DF1C4F6C800022B539 /* CustomNavBar.storyboard in Resources */,
 				E669DD511CC5BB15001CB2DD /* CustomViewDemoStoryboard.storyboard in Resources */,
 				E664F1A01C5B3A4D008FB5CF /* Photos.plist in Resources */,
 				E6A03EE31C23A722007B0222 /* TouchViewController.xib in Resources */,
 				E6A03EC11C225CB1007B0222 /* InteractiveTransitionStoryboard.storyboard in Resources */,
 				E6D2EB151C2234A700F46DF8 /* Assets.xcassets in Resources */,
+				FCE174FD1CAD22AC00F2C901 /* KeyboardDemoViewController.xib in Resources */,
 				E6712B701C337CE800C705E5 /* SDWebImageStoryboard.storyboard in Resources */,
 				E6A03ECF1C22655D007B0222 /* iphone.jpg in Resources */,
 				E669DD561CC5BB66001CB2DD /* CustomView.xib in Resources */,
@@ -727,6 +777,7 @@
 				E64CB7F51C3A05490073571B /* FMDBViewController.xib in Resources */,
 				E6D2EB271C2235EF00F46DF8 /* NavigationStoryboard.storyboard in Resources */,
 				E68F74CB1C4F349C0022B539 /* NavigationTrasitionStoryboard.storyboard in Resources */,
+				FC8B1DF21CD4B449009AA72D /* PopStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -793,6 +844,7 @@
 				E6D2EB251C2235DD00F46DF8 /* SecondViewController.m in Sources */,
 				E65413611C60854B001822AF /* WeiXinDelegate.m in Sources */,
 				E6F126B21C48992600154B8D /* MyTableViewController.m in Sources */,
+				FCE174FC1CAD22AC00F2C901 /* KeyboardDemoViewController.m in Sources */,
 				E6A03ED21C226819007B0222 /* NavigationControllerDelegate.m in Sources */,
 				E6D2EB101C2234A700F46DF8 /* ViewController.m in Sources */,
 				E6D2EB2A1C22367700F46DF8 /* PopAnimater.m in Sources */,
@@ -801,6 +853,7 @@
 				E6F126B61C489EAF00154B8D /* CustomTableViewCell.m in Sources */,
 				E654135D1C6084D9001822AF /* WeiXinDemoViewController.m in Sources */,
 				E68F74E21C4F6D430022B539 /* CNBFViewController.m in Sources */,
+				FCA921A31CA15160001FAEF0 /* SetGetDemo.m in Sources */,
 				E68F74DA1C4F38B70022B539 /* SwipeInteractionController.m in Sources */,
 				E669DD461CC4E77D001CB2DD /* ConstraintsDemoView.m in Sources */,
 				E664F1A51C5B3AFC008FB5CF /* PhotoStreamViewController.m in Sources */,
@@ -810,6 +863,7 @@
 				E63FCCFD1C322D3F008681E8 /* ImageFiltration.m in Sources */,
 				E669DD541CC5BB23001CB2DD /* CustomView.m in Sources */,
 				E6D2EB0D1C2234A700F46DF8 /* AppDelegate.m in Sources */,
+				FC8B1DF01CD4B432009AA72D /* PopDemoViewController.m in Sources */,
 				E64CB8261C3B720C0073571B /* Data.m in Sources */,
 				E664F1AB1C5B3ED2008FB5CF /* UIImage+Decompression.m in Sources */,
 				E669DD411CC4E6ED001CB2DD /* ConstraintsViewController.m in Sources */,
@@ -968,7 +1022,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOSDemo/libs",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zyj.iOSDemo2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zyj.iOSDemo3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -998,7 +1052,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/iOSDemo/libs",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zyj.iOSDemo2;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zyj.iOSDemo3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

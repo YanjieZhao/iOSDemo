@@ -40,24 +40,24 @@
 */
 
 - (IBAction)handleEmbedFile:(id)sender {
-    NSBundle *bundle = [NSBundle mainBundle];
-    //"/"很重要
-    NSString *path = [[bundle resourcePath]
-                      stringByAppendingString:@"/ipad.jpg"];
-    NSLog(@"%@", path);
-    
-    NSData *data = [NSData dataWithContentsOfFile:path];
-    NSLog(@"%lu", (unsigned long)data.length);
-    
-    //NSString *str=[[NSBundle mainBundle] pathForResource:@"" ofType:@".jpg"];
-    
-    //NSData *fileData = [NSData dataWithContentsOfFile:str];
-    
-    NSString *writeFilePath = [[self documentPath]
-                               stringByAppendingPathComponent:@"ipad.jgp"];
-    NSLog(@"%@", writeFilePath);
-    
-    [data writeToFile:writeFilePath atomically:YES];
+//    NSBundle *bundle = [NSBundle mainBundle];
+//    //"/"很重要
+//    NSString *path = [[bundle resourcePath]
+//                      stringByAppendingString:@"/ipad.jpg"];
+//    NSLog(@"%@", path);
+//    NSError
+//    NSData *data = [NSData dataWithContentsOfFile:path];
+//    NSLog(@"%lu", (unsigned long)data.length);
+//    
+//    //NSString *str=[[NSBundle mainBundle] pathForResource:@"" ofType:@".jpg"];
+//    
+//    //NSData *fileData = [NSData dataWithContentsOfFile:str];
+//    
+//    NSString *writeFilePath = [[self documentPath]
+//                               stringByAppendingPathComponent:@"ipad.jgp"];
+//    NSLog(@"%@", writeFilePath);
+//    
+//    [data writeToFile:writeFilePath atomically:YES];
 }
 
 - (IBAction)handleCStyleFile:(id)sender {
