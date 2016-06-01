@@ -27,7 +27,7 @@
     NSLog(@"%d", [sgd getGender]);
     sgd.x = 12;
     NSLog(@"%d", sgd.x);
-    
+    NSString *supportPath = [NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES) objectAtIndex:0];
     return YES;
 }
 

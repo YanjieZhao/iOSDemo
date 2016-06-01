@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIView *commentView;
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (assign, nonatomic) double imageMarginY;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 @end
 
 @implementation PopDemoViewController
@@ -40,6 +41,35 @@ UIView *plainView ;
     plainView.hidden = YES;
     
     _imageMarginY = _containerView.frame.origin.y + _containerView.frame.size.height / 2;
+    [self updateDots];
+}
+
+- (void) updateDots {
+    for (int i = 0; i < [self.pageControl.subviews count]; i++) {
+        UIImageView * dot = [self imageViewForSubview:[self.pageControl.subviews objectAtIndex: i]];
+        if (i == self.pageControl.currentPage) dot.image = [UIImage imageNamed:@"Slice 1"];
+        else dot.image = [UIImage imageNamed:@"Slice 2"];
+    }
+}
+
+- (UIImageView *) imageViewForSubview: (UIView *) view {
+    UIImageView * dot = nil;
+    if ([view isKindOfClass: [UIView class]]) {
+        for (UIView* subview in view.subviews) {
+            if ([subview isKindOfClass:[UIImageView class]]) {
+                dot = (UIImageView *)subview;
+                break;
+            }
+        }
+        if (dot == nil) {
+            dot = [[UIImageView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, view.frame.size.width, view.frame.size.height)];
+            [view addSubview:dot];
+        }
+    }else {
+        dot = (UIImageView *) view;
+    }
+    
+    return dot;
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -98,19 +128,41 @@ UIView *plainView ;
     }
     
     anim.toValue = [NSValue valueWithCGPoint:CGPointMake(centerX, toCenterY)];
-    //anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     anim.duration = duration;
     [self.commentView pop_addAnimation:anim forKey:@"centerAnimation"];
+    
+    
 }
 - (void)openCommentView
 {
     double centerY = self.view.bounds.size.height - _commentView.bounds.size.height / 2;
-    [self animateCommentView:centerY duration:0.2f];
+    [self animateCommentView:centerY duration:1.f];
+    POPDecayAnimation *anDecay = [POPDecayAnimation animationWithPropertyNamed:kPOPLayerPositionY];
+    anDecay.velocity = @(0 - centerY / 2);
+    NSLog(@"%f,%f", centerY, anDecay.duration);
+    
+    POPSpringAnimation *spring = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionY];
+    spring.springSpeed = 0.5f;
+    spring.springBounciness = 2.f;
+    spring.toValue = @(centerY);
+
+    //[self.commentView pop_addAnimation:anDecay forKey:@"decay"];
+    //[self.commentView pop_addAnimation:spring forKey:@"decay1"];
 }
 - (void)closeCommentView
 {
     double centerY = self.view.bounds.size.height + _commentView.bounds.size.height / 2;
-    [self animateCommentView:centerY duration:0.2f];
+    [self animateCommentView:centerY duration:1.f];
+    
+    
+    POPDecayAnimation *anDecay = [POPDecayAnimation animationWithPropertyNamed:kPOPLayerPositionY];
+    anDecay.velocity = @(centerY);
+    POPSpringAnimation *spring = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerPositionY];
+    spring.toValue = @(centerY);
+    NSLog(@"%f,%f", centerY, anDecay.duration);
+    //[self.commentView pop_addAnimation:anDecay forKey:@"decay"];
+    //[self.commentView pop_addAnimation:spring forKey:@"decay1"];
 }
 
 - (void)animateDesktop:(double)currentLocation lastLocation:(double)lastLocation
